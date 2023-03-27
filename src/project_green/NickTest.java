@@ -7,7 +7,7 @@ public class NickTest {
         System.out.println("Hello.   I'm still testing GitHub");
         System.out.println("Kristy testing, 1, 2");
         System.out.println("Nick testing again");
-        System.out.println("Zach is swinging his weiner")
+        System.out.println("Zach test");
         
     }
 
