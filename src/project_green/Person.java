@@ -18,7 +18,7 @@ public class Person  implements Comparable<Person>  {
         
     }
     
-    setName(){
+    setName(String name){
         
     }
     
@@ -26,21 +26,21 @@ public class Person  implements Comparable<Person>  {
         
     }
     
-    setEmail(){
+    setEmail(String email){
         
     }
     
-    getPersonality(){
+    getYourPersonality(){
         
     }
     
-    setPersonality(Quiz q, Traits t){
+    setYourPersonality(Quiz q, Traits t){
         
     }
     
     compareTo(Person x){
         
-        return x
+        return x;
         
     }
     
