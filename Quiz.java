@@ -2,7 +2,7 @@
  * The Quiz class implements the questions to ask the user to help determine their personality. 
  * 
  */
-
+package project_green
 
 
 public class Quiz {
