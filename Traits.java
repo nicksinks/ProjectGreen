@@ -1,4 +1,4 @@
-package ProjectGreen;
+package project_green;
 
 public class Traits {
     private boolean mood;
