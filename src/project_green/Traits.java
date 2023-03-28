@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 package project_green;
 
 public class Traits {
