@@ -5,13 +5,17 @@ Group Project for Programming 2 IUSB SP2023
 ##############################################
 # Project 1 for Programming 2
 #
-# Either a Personality Quiz or Virtual Library
 #
-# Personality Quiz: Star Wars or Harry Potter
+# Personality Quiz: Silly Internet Personality Quiz
 #
 # Virtual Library: Manage Users and Book
 # inventory for a virtual library
 # 
+#
+# Confirmed New Class Files:
+#
+# added Quiz, Traits, Person, Personality Classes 
+#
 #
 # Class authors:
 # @nicholaszeig
@@ -20,4 +24,4 @@ Group Project for Programming 2 IUSB SP2023
 # @kristymiller
 #
 #
-# Read Me last revised 02.26.2023 10:33 a.m.          
+# Read Me last revised 03.27.2023 08:35 p.m.          
