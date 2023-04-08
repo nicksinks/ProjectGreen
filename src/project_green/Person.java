@@ -1,5 +1,13 @@
 package project_green;
 
+/**
+ * 
+ * @author nicholaszeig
+ * @project Project_Green
+ * @lastRevised 04/08/2023
+ *
+ */
+
 public class Person  implements Comparable<Person>  {
     
         String name;
