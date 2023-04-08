@@ -1,3 +1,4 @@
+//@Author Project Green, Kristy Miller, 4/8/23
 package project_green;
 
 public class Traits {
