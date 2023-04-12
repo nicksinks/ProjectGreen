@@ -8,7 +8,7 @@ package project_green;
  *
  */
 
-public class Person  implements Comparable<Person>  {
+public class Person {
     
         String name;
         String email;
@@ -42,11 +42,12 @@ public class Person  implements Comparable<Person>  {
         
     }
     
-    setYourPersonality(Quiz q, Traits t){
-        
+    setYourPersonality(PersonalityType x){
+        this.yourPersonality = x;
+       
     }
     
-    compareTo(Person x){
+    comparePersonalities(Person x){
         
         return x;
         
