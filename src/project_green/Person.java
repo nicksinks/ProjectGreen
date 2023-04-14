@@ -1,58 +1,63 @@
-package project_green;
-
 /**
  * 
+ */
+package quiz;
+
+import quiz.Person;
+
+/**
  * @author nicholaszeig
- * @project Project_Green
- * @lastRevised 04/08/2023
  *
  */
-
 public class Person {
     
-        String name;
-        String email;
-        Personality yourPersonality;
-    
-    
-    public Person(String name, String email, Personality yourPersonality) {
+    String name;
+    String email;
+    Traits traits;//maybe this is just the array of traits//maybe this is just Traits
+    /**
+     * @param name
+     * @param email
+     */
+    public Person(String name, String email) {
+        super();
         this.name = name;
         this.email = email;
-        this.yourPersonality = null;
-        
     }
     
-    getName(){
-        
+    public String getName() {
+        return name;
     }
     
-    setName(String name){
-        
+    public void setName(String name) {
+        this.name = name;
     }
     
-    getEmail(){
-        
+    public String getEmail() {
+        return email;
     }
     
-    setEmail(String email){
-        
+    public void setEmail(String email) {
+        this.email = email;
     }
     
-    getYourPersonality(){
+    public void setTraits(Traits traits){
         
-    }
-    
-    setYourPersonality(PersonalityType x){
-        this.yourPersonality = x;
+        this.traits = traits;
        
     }
     
-    comparePersonalities(Person x){
-        
-        return x;
-        
+    public int compareTo(Person x) {
+        return 1;
     }
     
+    @Override
+    public String toString() {
+        return "" + getName() + "" ;
+    }
+    
+    
+    
+    
+    
+
 }
-
-
