@@ -1,8 +1,8 @@
-//package application;
+package quiz;
 //
 //import java.util.ArrayList;
 //
-//public class TestClassforDummies {
+public class TestClassforDummies {
 //    
 //    ArrayList<PersonalityType> personalities = new ArrayList<PersonalityType>();
 //    PersonalityType[] personalitiesArray = new PersonalityType[16];
@@ -65,4 +65,4 @@
 //
 //    }
 //
-//}
+}
