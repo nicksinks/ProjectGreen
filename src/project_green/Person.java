@@ -3,8 +3,6 @@
  */
 package quiz;
 
-import quiz.Person;
-
 /**
  * @author nicholaszeig
  *
