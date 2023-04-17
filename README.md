@@ -18,6 +18,8 @@ Group Project for Programming 2 IUSB SP2023
 # determined Personality Class not viable.  
 # Traits and PersonalityType will have a Composition relationship
 # 04.16.2023 Added GUI.  Had to reload all classes to add JavaFX to project
+# added newMainBranch to house said GUI and classes.
+#
 # Class authors:
 # @nicholaszeig
 # @zachariahsykes
