@@ -11,7 +11,7 @@ public class Person {
     
     String name;
     String email;
-    Traits traits;//maybe this is just the array of traits//maybe this is just Traits
+    Traits yourTraits;//maybe this is just the array of traits//maybe this is just Traits
     /**
      * @param name
      * @param email
@@ -40,7 +40,7 @@ public class Person {
     
     public void setTraits(Traits traits){
         
-        this.traits = traits;
+        this.yourTraits = traits;
        
     }
     

@@ -1,8 +1,28 @@
-//package application;
+package application;
 //
 //import java.util.ArrayList;
 //
-//public class TestClassforDummies {
+public class TestClassforDummies {
+    
+    Traits tttt = new Traits(true,true,true,true);  
+    PersonalityType beyMonster = new PersonalityType(tttt, "Beymonster");
+    
+    
+    //quiz here that sets the traits values
+    Person person = new Person("nick", "email@email.com");//text from gui, text from gui
+    
+    
+//    for (for personality: personalities) {
+//        if (Person.traits.equalTo(personalities.get(i))) {
+//            System.out.println(personality.get(i).toString());
+//            System.out.println(image);
+//            
+//        }
+//    }
+    
+    
+    // do you want to do a new quiz?
+    
 //    
 //    ArrayList<PersonalityType> personalities = new ArrayList<PersonalityType>();
 //    PersonalityType[] personalitiesArray = new PersonalityType[16];
@@ -65,4 +85,4 @@
 //
 //    }
 //
-//}
+}
