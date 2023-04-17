@@ -1,9 +1,13 @@
 package application;
 
+import java.util.Scanner;
+
 
 public class Quiz {
     
+    
     int moodCounter, mustacheCounter, bootyCounter, bankrollCounter;
+    static Scanner scan = new Scanner(System.in);
 
 
     public Quiz() {
@@ -23,7 +27,8 @@ public class Quiz {
             //Person.add(new Person(their name input, their email input)
             String name = "some name from asking";
             String email = "some email from asking";
-            Person person = new Person(name, email);
+            Person person = new Person(name, email);//text from gui, text from gui
+            
             
             //ArrayList personList = new ArrayList()
             //PersonList for loop to pull from file, maybe
@@ -38,6 +43,8 @@ public class Quiz {
 
     
     public void getAnswers() {
+        
+        
         
  
         
@@ -58,9 +65,40 @@ public class Quiz {
     
     
     
-    public void setTraitsFromQuizAnswers(int[] x) {
+    public Traits setTraitsFromQuizAnswers(int[] x) {
         //if answers are 2 or 3 of 3, set Traits value to true
         //if answers are 0 or 1 of 3, set Traits value to false  
+        boolean mood, mustache, booty, bankroll;
+        
+        if (x[0] < 2) {
+            mood = false;
+        } else {
+            mood = true;
+        }
+        
+        if (x[1] < 2) {
+            mustache = false;
+        } else {
+            mustache = true;
+        }
+        if (x[2] < 2) {
+            booty = false;
+        } else {
+            booty = true;
+        }
+        if (x[3] < 2) {
+            bankroll = false;
+        } else {
+            bankroll = true;
+        }
+        
+        
+        
+        Traits yourTraits = new Traits(mood, mustache, booty, bankroll);
+        person.setTraits(yourTraits);
+        return yourTraits; 
+
+        
         
         
     }
@@ -71,6 +109,4 @@ public class Quiz {
 
         
 }
-
-
 
