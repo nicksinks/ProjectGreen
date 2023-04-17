@@ -3,20 +3,21 @@
 
 Group Project for Programming 2 IUSB SP2023
 ##############################################
-# Project 1 for Programming 2
+# Project for Programming 2
 #
 #
 # Personality Quiz: Silly Internet Personality Quiz
 #
-# Virtual Library: Manage Users and Book
-# inventory for a virtual library
+# 
+# 
 # 
 #
 # Confirmed New Class Files:
 #
 # added Quiz, Traits, Person, Personality Classes 
-#
-#
+# determined Personality Class not viable.  
+# Traits and PersonalityType will have a Composition relationship
+# 04.16.2023 Added GUI.  Had to reload all classes to add JavaFX to project
 # Class authors:
 # @nicholaszeig
 # @zachariahsykes
@@ -24,4 +25,4 @@ Group Project for Programming 2 IUSB SP2023
 # @kristymiller
 #
 #
-# Read Me last revised 03.27.2023 08:35 p.m.          
+# Read Me last revised 04.16.2023 09:26 p.m.          
