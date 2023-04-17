@@ -4,8 +4,8 @@ package application;
 //
 public class TestClassforDummies {
     
-    Traits tttt = new Traits(true,true,true,true);  
-    PersonalityType beyMonster = new PersonalityType(tttt, "Beymonster");
+    //Traits tttt = new Traits(true,true,true,true);  
+    //PersonalityType beyMonster = new PersonalityType(tttt, "Beymonster");
     
     
     //quiz here that sets the traits values
