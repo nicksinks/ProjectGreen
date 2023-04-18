@@ -55,13 +55,13 @@
     </MenuBar>
     <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
       <children>
-        <Label alignment="CENTER" layoutX="87.0" layoutY="178.0" prefHeight="27.0" prefWidth="68.0" style="&#10;" text="E-mail:" textAlignment="CENTER" textFill="#9f9f9f" wrapText="false">
+        <Label fx:id="emailLbl" alignment="CENTER" layoutX="87.0" layoutY="178.0" prefHeight="27.0" prefWidth="68.0" style="&#10;" text="E-mail:" textAlignment="CENTER" textFill="#9f9f9f" wrapText="false">
           <font>
             <Font size="18.0" />
           </font>
         </Label>
-            <Button layoutX="294.0" layoutY="280.0" mnemonicParsing="false" onAction="#newQuiz" text="New Quiz" />
-            <Label alignment="CENTER" layoutX="87.0" layoutY="111.0" prefHeight="27.0" prefWidth="68.0" style="&#10;" text="Name:" textAlignment="CENTER" textFill="#9f9f9f" wrapText="false">
+            <Button fx:id="newQuizButton" layoutX="294.0" layoutY="280.0" mnemonicParsing="false" onAction="#newQuiz" text="New Quiz" />
+            <Label fx:id="nameLabel" alignment="CENTER" layoutX="87.0" layoutY="111.0" prefHeight="27.0" prefWidth="68.0" style="&#10;" text="Name:" textAlignment="CENTER" textFill="#9f9f9f" wrapText="false">
                <font>
                   <Font size="18.0" />
                </font>
