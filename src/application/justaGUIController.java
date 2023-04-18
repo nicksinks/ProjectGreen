@@ -4,6 +4,7 @@ package application;
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 
@@ -21,6 +22,9 @@ public class justaGUIController {
 
     @FXML
     private Label nameLabel;
+    
+    @FXML
+    private Button newQuizButton;
 
     @FXML
     void exit(ActionEvent event) {
@@ -35,7 +39,9 @@ public class justaGUIController {
         personName.setVisible(false);
         emailLbl.setVisible(false);
         nameLabel.setVisible(false);
+        newQuizButton.setVisible(false);
         
+        //run method displayQuestion1  it follows by running method displayQuestion2 
         
     }
 
