@@ -48,6 +48,24 @@ public class justaGUIController {
     private Button mustacheYes;
 
     @FXML
+    private Button moodNo;
+
+    @FXML
+    private Button moodYes;
+    
+    @FXML
+    private Button bootyNo;
+
+    @FXML
+    private Button bootyYes;
+    
+    @FXML
+    private Button bankrollNo;
+
+    @FXML
+    private Button bankrollYes;
+
+    @FXML
     private Label question1Label;
 
 
@@ -65,6 +83,19 @@ public class justaGUIController {
         //run method displayQuestion1  it follows by running method displayQuestion2 
 
     }
+//    @FXML
+//    void mustacheYes(ActionEvent event) throws IOException {
+//        
+//        // determine how to do mustache ++
+//        switchToQuestion2(event);
+//    }
+//    
+//    @FXML
+//    void mustacheNo(ActionEvent event) throws IOException {
+//        
+//        // no mustache ++
+//        switchToQuestion2(event);
+//    }
 
     public void switchToQuestion1(ActionEvent event) throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource("Question1.fxml"));
