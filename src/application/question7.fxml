@@ -54,13 +54,13 @@
     </MenuBar>
     <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
       <children>
-            <Button fx:id="bootyYes" layoutX="179.0" layoutY="238.0" mnemonicParsing="false" onAction="#switchToQuestion8" text="Yes" />
+            <Button fx:id="bootyYes" layoutX="179.0" layoutY="238.0" mnemonicParsing="false" onAction="#yesSwitchToQuestion8" text="Yes" />
             <Label fx:id="question7Label" alignment="CENTER" layoutX="260.0" layoutY="14.0" prefHeight="27.0" prefWidth="120.0" style="&#10;" text="Question7" textAlignment="CENTER" textFill="#9f9f9f" wrapText="false">
                <font>
                   <Font size="18.0" />
                </font>
             </Label>
-            <Button fx:id="bootyNo" layoutX="419.0" layoutY="238.0" mnemonicParsing="false" onAction="#switchToQuestion8" text="No" />
+            <Button fx:id="bootyNo" layoutX="419.0" layoutY="238.0" mnemonicParsing="false" onAction="#noSwitchToQuestion8" text="No" />
             <Label layoutX="91.0" layoutY="119.0" text="You got junk in your trunk?" textAlignment="CENTER" wrapText="true">
                <font>
                   <Font size="24.0" />

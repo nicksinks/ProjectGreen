@@ -54,13 +54,13 @@
     </MenuBar>
     <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
       <children>
-            <Button fx:id="mustacheYes" layoutX="179.0" layoutY="238.0" mnemonicParsing="false" onAction="#switchToQuestion4" text="Yes" />
+            <Button fx:id="mustacheYes" layoutX="179.0" layoutY="238.0" mnemonicParsing="false" onAction="#yesSwitchToQuestion4" text="Yes" />
             <Label fx:id="question3Label" alignment="CENTER" layoutX="260.0" layoutY="14.0" prefHeight="27.0" prefWidth="120.0" style="&#10;" text="Question3" textAlignment="CENTER" textFill="#9f9f9f" wrapText="false">
                <font>
                   <Font size="18.0" />
                </font>
             </Label>
-            <Button fx:id="mustacheNo" layoutX="419.0" layoutY="238.0" mnemonicParsing="false" onAction="#switchToQuestion4" text="No" />
+            <Button fx:id="mustacheNo" layoutX="419.0" layoutY="238.0" mnemonicParsing="false" onAction="#noSwitchToQuestion4" text="No" />
             <Label layoutX="91.0" layoutY="119.0" text="Are your handlebars fit for Sam Elliot?" textAlignment="CENTER" wrapText="true">
                <font>
                   <Font size="24.0" />
