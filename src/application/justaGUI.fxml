@@ -1,36 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!--
-  Copyright (c) 2015, 2019, Gluon and/or its affiliates.
-  All rights reserved. Use is subject to license terms.
-
-  This file is available and licensed under the following license:
-
-  Redistribution and use in source and binary forms, with or without
-  modification, are permitted provided that the following conditions
-  are met:
-
-  - Redistributions of source code must retain the above copyright
-    notice, this list of conditions and the following disclaimer.
-  - Redistributions in binary form must reproduce the above copyright
-    notice, this list of conditions and the following disclaimer in
-    the documentation and/or other materials provided with the distribution.
-  - Neither the name of Oracle Corporation nor the names of its
-    contributors may be used to endorse or promote products derived
-    from this software without specific prior written permission.
-
-  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
-  "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
-  LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
-  A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
-  OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
-  SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
-  LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
-  DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
-  THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
-  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
-  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
--->
+<!-- Copyright (c) 2015, 2019, Gluon and/or its affiliates. All rights reserved. 
+	Use is subject to license terms. This file is available and licensed under 
+	the following license: Redistribution and use in source and binary forms, 
+	with or without modification, are permitted provided that the following conditions 
+	are met: - Redistributions of source code must retain the above copyright 
+	notice, this list of conditions and the following disclaimer. - Redistributions 
+	in binary form must reproduce the above copyright notice, this list of conditions 
+	and the following disclaimer in the documentation and/or other materials 
+	provided with the distribution. - Neither the name of Oracle Corporation 
+	nor the names of its contributors may be used to endorse or promote products 
+	derived from this software without specific prior written permission. THIS 
+	SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
+	ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED 
+	WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. 
+	IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, 
+	INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, 
+	BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF 
+	USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY 
+	THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING 
+	NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, 
+	EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. -->
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
@@ -42,33 +32,121 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.justaGUIController">
-  <children>
-    <MenuBar VBox.vgrow="NEVER">
-      <menus>
-        <Menu mnemonicParsing="false" text="File">
-          <items>
-            <MenuItem mnemonicParsing="false" onAction="#exit" text="Quit" />
-          </items>
-        </Menu>
-      </menus>
-    </MenuBar>
-    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
-      <children>
-        <Label fx:id="emailLbl" alignment="CENTER" layoutX="87.0" layoutY="178.0" prefHeight="27.0" prefWidth="68.0" style="&#10;" text="E-mail:" textAlignment="CENTER" textFill="#9f9f9f" wrapText="false">
-          <font>
-            <Font size="18.0" />
-          </font>
-        </Label>
-            <Button fx:id="newQuizButton" layoutX="294.0" layoutY="280.0" mnemonicParsing="false" onAction="#newQuiz" text="New Quiz" />
-            <Label fx:id="nameLabel" alignment="CENTER" layoutX="87.0" layoutY="111.0" prefHeight="27.0" prefWidth="68.0" style="&#10;" text="Name:" textAlignment="CENTER" textFill="#9f9f9f" wrapText="false">
-               <font>
-                  <Font size="18.0" />
-               </font>
-            </Label>
-            <TextField fx:id="personName" layoutX="166.0" layoutY="87.0" prefHeight="62.0" prefWidth="386.0" />
-            <TextField fx:id="personEmail" layoutX="166.0" layoutY="164.0" prefHeight="62.0" prefWidth="386.0" />
-      </children>
-    </AnchorPane>
-  </children>
+<VBox prefHeight="400.0" prefWidth="640.0"
+	xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1"
+	fx:controller="application.justaGUIController">
+	<children>
+		<MenuBar VBox.vgrow="NEVER">
+			<menus>
+				<Menu mnemonicParsing="false" text="File">
+					<items>
+						<MenuItem mnemonicParsing="false" onAction="#exit"
+							text="Quit" />
+					</items>
+				</Menu>
+			</menus>
+		</MenuBar>
+		<AnchorPane maxHeight="-1.0" maxWidth="-1.0"
+			prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
+			<children>
+				<Label fx:id="emailLbl" alignment="CENTER" layoutX="87.0"
+					layoutY="178.0" prefHeight="27.0" prefWidth="68.0" style="&#10;"
+					text="E-mail:" textAlignment="CENTER" textFill="#9f9f9f"
+					wrapText="false">
+					<font>
+						<Font size="18.0" />
+					</font>
+				</Label>
+				<Button fx:id="newQuizButton" layoutX="294.0" layoutY="280.0"
+					mnemonicParsing="false" onAction="#newQuiz" text="New Quiz" />
+				<Button fx:id="mustacheYes1" layoutX="179.0" layoutY="238.0"
+					mnemonicParsing="false" onAction="#yesSwitchToQuestion2" text="Yes" />
+				<Button fx:id="mustacheNo1" layoutX="419.0" layoutY="238.0"
+					mnemonicParsing="false" onAction="#noSwitchToQuestion2" text="No" />
+				<Button fx:id="mustacheYes2" layoutX="179.0" layoutY="238.0"
+					mnemonicParsing="false" onAction="#yesSwitchToQuestion3" text="Yes" />
+				<Button fx:id="mustacheNo2" layoutX="419.0" layoutY="238.0"
+					mnemonicParsing="false" onAction="#noSwitchToQuestion3" text="No" />
+				<Button fx:id="mustacheYes3" layoutX="179.0" layoutY="238.0"
+					mnemonicParsing="false" onAction="#yesSwitchToQuestion4" text="Yes" />
+				<Button fx:id="mustacheNo3" layoutX="419.0" layoutY="238.0"
+					mnemonicParsing="false" onAction="#noSwitchToQuestion4" text="No" />
+				<Button fx:id="moodYes4" layoutX="179.0" layoutY="238.0"
+					mnemonicParsing="false" onAction="#yesSwitchToQuestion5" text="Yes" />
+				<Button fx:id="moodNo4" layoutX="419.0" layoutY="238.0"
+					mnemonicParsing="false" onAction="#noSwitchToQuestion5" text="No" />
+				<Button fx:id="moodYes5" layoutX="179.0" layoutY="238.0"
+					mnemonicParsing="false" onAction="#yesSwitchToQuestion6" text="Yes" />
+				<Button fx:id="moodNo5" layoutX="419.0" layoutY="238.0"
+					mnemonicParsing="false" onAction="#noSwitchToQuestion6" text="No" />
+				<Button fx:id="moodYes6" layoutX="179.0" layoutY="238.0"
+					mnemonicParsing="false" onAction="#yesSwitchToQuestion7" text="Yes" />
+				<Button fx:id="moodNo6" layoutX="419.0" layoutY="238.0"
+					mnemonicParsing="false" onAction="#noSwitchToQuestion7" text="No" />
+				<Button fx:id="bootyYes7" layoutX="179.0" layoutY="238.0"
+					mnemonicParsing="false" onAction="#yesSwitchToQuestion8" text="Yes" />
+				<Button fx:id="bootyNo7" layoutX="419.0" layoutY="238.0"
+					mnemonicParsing="false" onAction="#noSwitchToQuestion8" text="No" />
+				<Button fx:id="bootyYes8" layoutX="179.0" layoutY="238.0"
+					mnemonicParsing="false" onAction="#yesSwitchToQuestion9" text="Yes" />
+				<Button fx:id="bootyNo8" layoutX="419.0" layoutY="238.0"
+					mnemonicParsing="false" onAction="#noSwitchToQuestion9" text="No" />
+				<Button fx:id="bootyYes9" layoutX="179.0" layoutY="238.0"
+					mnemonicParsing="false" onAction="#yesSwitchToQuestion10"
+					text="Yes" />
+				<Button fx:id="bootyNo9" layoutX="419.0" layoutY="238.0"
+					mnemonicParsing="false" onAction="#noSwitchToQuestion10" text="No" />
+				<Button fx:id="bankrollYes10" layoutX="179.0" layoutY="238.0"
+					mnemonicParsing="false" onAction="#yesSwitchToQuestion11"
+					text="Yes" />
+				<Button fx:id="bankrollNo10" layoutX="419.0" layoutY="238.0"
+					mnemonicParsing="false" onAction="#noSwitchToQuestion11" text="No" />
+				<Button fx:id="bankrollYes11" layoutX="179.0" layoutY="238.0"
+					mnemonicParsing="false" onAction="#yesSwitchToQuestion12"
+					text="Yes" />
+				<Button fx:id="bankrollNo11" layoutX="419.0" layoutY="238.0"
+					mnemonicParsing="false" onAction="#noSwitchToQuestion12" text="No" />
+				<Button fx:id="bankrollYes12" layoutX="179.0" layoutY="238.0"
+					mnemonicParsing="false" onAction="#yesSwitchToProfilePage"
+					text="Yes" />
+				<Button fx:id="bankrollNo12" layoutX="419.0" layoutY="238.0"
+					mnemonicParsing="false" onAction="#noSwitchToProfilePage" text="No" />
+				<Label fx:id="nameLabel" alignment="CENTER" layoutX="87.0"
+					layoutY="111.0" prefHeight="27.0" prefWidth="68.0" style="&#10;"
+					text="Name:" textAlignment="CENTER" textFill="#9f9f9f"
+					wrapText="false">
+					<font>
+						<Font size="18.0" />
+					</font>
+				</Label>
+				<TextField fx:id="personName" layoutX="166.0"
+					layoutY="87.0" prefHeight="62.0" prefWidth="386.0" />
+				<TextField fx:id="personEmail" layoutX="166.0"
+					layoutY="164.0" prefHeight="62.0" prefWidth="386.0" />
+				<Label fx:id="questionLabel" alignment="CENTER"
+					layoutX="260.0" layoutY="14.0" prefHeight="27.0" prefWidth="120.0"
+					style="&#10;" text="" textAlignment="CENTER"
+					textFill="#9f9f9f" wrapText="true">
+					<font>
+						<Font size="18.0" />
+					</font>
+				</Label>
+				                <Label fx:id="question" alignment="CENTER"
+                    layoutX="91.0" layoutY="119.0" prefHeight="27.0" 
+                    text="" textAlignment="CENTER"
+                    textFill="#9f9f9f" wrapText="true">
+                    <font>
+                        <Font size="24.0" />
+                    </font>
+                </Label>
+				<Label layoutX="91.0" layoutY="119.0"
+					text=""
+					textAlignment="CENTER" wrapText="true">
+					<font>
+						<Font size="24.0" />
+					</font>
+				</Label>
+			</children>
+		</AnchorPane>
+	</children>
 </VBox>
