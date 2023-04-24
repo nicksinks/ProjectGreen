@@ -222,6 +222,7 @@ public class justaGUIController {
         question.setText("fuck you");
         mustacheYes2.setVisible(true);
         mustacheNo2.setVisible(true);
+        quiz.setMustacheCounter(0);//this should be mustache
         
 
     }
