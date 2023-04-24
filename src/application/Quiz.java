@@ -11,6 +11,7 @@ public class Quiz {
 
 
     public Quiz() {
+        
         this.moodCounter = 0;
         this.mustacheCounter = 0;
         this.bootyCounter = 0;
@@ -73,30 +74,30 @@ public class Quiz {
 
 
 
-    public void addPerson() {
-        try {
-            
-            //open a file here containing our stored Persons. skip step 1 for now
-            //Create an ArrayList of Persons
-            
-            
-            //Add new person to ArrayList of Persons
-            //Person.add(new Person(their name input, their email input)
-            String name = "some name from asking";
-            String email = "some email from asking";
-            Person person = new Person(name, email);//text from gui, text from gui
-            
-            
-            //ArrayList personList = new ArrayList()
-            //PersonList for loop to pull from file, maybe
-            //personList.add(person);
-              
-        }
-        catch (Exception e) {
-            e.printStackTrace();
-        }
-    }
-    
+//    public void addPerson() {
+//        try {
+//            
+//            //open a file here containing our stored Persons. skip step 1 for now
+//            //Create an ArrayList of Persons
+//            
+//            
+//            //Add new person to ArrayList of Persons
+//            //Person.add(new Person(their name input, their email input)
+//            String name = "some name from asking";
+//            String email = "some email from asking";
+//            Person person = new Person(name, email);//text from gui, text from gui
+//            
+//            
+//            //ArrayList personList = new ArrayList()
+//            //PersonList for loop to pull from file, maybe
+//            //personList.add(person);
+//              
+//        }
+//        catch (Exception e) {
+//            e.printStackTrace();
+//        }
+//    }
+//    
 
     
     public void getAnswers() {

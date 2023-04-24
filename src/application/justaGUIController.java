@@ -23,6 +23,9 @@ public class justaGUIController {
     
     
     Quiz quiz = new Quiz();
+    private Parent root;
+    private Stage stage;
+    private Scene scene;
     
     
 
@@ -105,6 +108,13 @@ public class justaGUIController {
         emailLbl.setVisible(false);
         nameLabel.setVisible(false);
         newQuizButton.setVisible(false);
+        quiz.setMoodCounter();
+        System.out.println();
+        quiz.setMoodCounter();
+        System.out.println();
+        quiz.setMoodCounter();
+        System.out.println();
+        
         switchToQuestion1(event);
 
         //run method displayQuestion1  it follows by running method displayQuestion2 
@@ -127,25 +137,26 @@ public class justaGUIController {
      @FXML
 
     public void switchToQuestion1(ActionEvent event) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("Question1.fxml"));
-        Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
-        Scene scene = new Scene(root);
+        root = FXMLLoader.load(getClass().getResource("Question1.fxml"));
+        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
     }
     @FXML
     public void noSwitchToQuestion2(ActionEvent event) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("Question2.fxml"));
-        Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
-        Scene scene = new Scene(root);
+      
+        root = FXMLLoader.load(getClass().getResource("Question2.fxml"));
+        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
     } 
     @FXML
     public void yesSwitchToQuestion2(ActionEvent event) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("Question2.fxml"));
-        Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
-        Scene scene = new Scene(root);
+        root = FXMLLoader.load(getClass().getResource("Question2.fxml"));
+        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
         quiz.setMustacheCounter(0);
@@ -153,187 +164,187 @@ public class justaGUIController {
     
     @FXML
     public void yesSwitchToQuestion3(ActionEvent event) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("Question3.fxml"));
-        Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
-        Scene scene = new Scene(root);
+        root = FXMLLoader.load(getClass().getResource("Question3.fxml"));
+        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
         quiz.setMustacheCounter(0);
     }
     @FXML
     public void noSwitchToQuestion3(ActionEvent event) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("Question3.fxml"));
-        Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
-        Scene scene = new Scene(root);
+        root = FXMLLoader.load(getClass().getResource("Question3.fxml"));
+        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
     }
     @FXML
     public void yesSwitchToQuestion4(ActionEvent event) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("Question4.fxml"));
-        Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
-        Scene scene = new Scene(root);
+        root = FXMLLoader.load(getClass().getResource("Question4.fxml"));
+        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
         quiz.setMustacheCounter(0);
     }
     @FXML
     public void noSwitchToQuestion4(ActionEvent event) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("Question4.fxml"));
-        Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
-        Scene scene = new Scene(root);
+        root = FXMLLoader.load(getClass().getResource("Question4.fxml"));
+        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
     }
     @FXML
     public void yesSwitchToQuestion5(ActionEvent event) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("Question5.fxml"));
-        Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
-        Scene scene = new Scene(root);
+        root = FXMLLoader.load(getClass().getResource("Question5.fxml"));
+        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
         quiz.setMoodCounter();
     }
     @FXML
     public void noSwitchToQuestion5(ActionEvent event) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("Question5.fxml"));
-        Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
-        Scene scene = new Scene(root);
+        root = FXMLLoader.load(getClass().getResource("Question5.fxml"));
+        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
     }
     @FXML
     public void yesSwitchToQuestion6(ActionEvent event) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("Question6.fxml"));
-        Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
-        Scene scene = new Scene(root);
+        root = FXMLLoader.load(getClass().getResource("Question6.fxml"));
+        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
         quiz.setMoodCounter();
     }
     @FXML
     public void noSwitchToQuestion6(ActionEvent event) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("Question6.fxml"));
-        Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
-        Scene scene = new Scene(root);
+        root = FXMLLoader.load(getClass().getResource("Question6.fxml"));
+        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
     }
     @FXML
     public void yesSwitchToQuestion7(ActionEvent event) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("Question7.fxml"));
-        Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
-        Scene scene = new Scene(root);
+        root = FXMLLoader.load(getClass().getResource("Question7.fxml"));
+        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
         quiz.setMoodCounter();
     }
     @FXML
     public void noSwitchToQuestion7(ActionEvent event) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("Question7.fxml"));
-        Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
-        Scene scene = new Scene(root);
+        root = FXMLLoader.load(getClass().getResource("Question7.fxml"));
+        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
     }
     @FXML
     public void yesSwitchToQuestion8(ActionEvent event) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("Question8.fxml"));
-        Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
-        Scene scene = new Scene(root);
+        root = FXMLLoader.load(getClass().getResource("Question8.fxml"));
+        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
         quiz.setBootyCounter(0);
     }
     @FXML
     public void noSwitchToQuestion8(ActionEvent event) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("Question8.fxml"));
-        Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
-        Scene scene = new Scene(root);
+        root = FXMLLoader.load(getClass().getResource("Question8.fxml"));
+        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
     }
     @FXML
     public void yesSwitchToQuestion9(ActionEvent event) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("Question9.fxml"));
-        Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
-        Scene scene = new Scene(root);
+        root = FXMLLoader.load(getClass().getResource("Question9.fxml"));
+        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
         quiz.setBootyCounter(0);
     }
     @FXML
     public void noSwitchToQuestion9(ActionEvent event) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("Question9.fxml"));
-        Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
-        Scene scene = new Scene(root);
+        root = FXMLLoader.load(getClass().getResource("Question9.fxml"));
+        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
     }
     public void yesSwitchToQuestion10(ActionEvent event) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("Question10.fxml"));
-        Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
-        Scene scene = new Scene(root);
+        root = FXMLLoader.load(getClass().getResource("Question10.fxml"));
+        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
         quiz.setBootyCounter(0);
     }
     @FXML
     public void noSwitchToQuestion10(ActionEvent event) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("Question10.fxml"));
-        Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
-        Scene scene = new Scene(root);
+        root = FXMLLoader.load(getClass().getResource("Question10.fxml"));
+        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
     }
     @FXML
     public void yesSwitchToQuestion11(ActionEvent event) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("Question11.fxml"));
-        Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
-        Scene scene = new Scene(root);
+        root = FXMLLoader.load(getClass().getResource("Question11.fxml"));
+        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
         quiz.setBankrollCounter(0);
     }
     @FXML
     public void noSwitchToQuestion11(ActionEvent event) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("Question11.fxml"));
-        Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
-        Scene scene = new Scene(root);
+        root = FXMLLoader.load(getClass().getResource("Question11.fxml"));
+        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
     }
     @FXML
     public void yesSwitchToQuestion12(ActionEvent event) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("Question12.fxml"));
-        Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
-        Scene scene = new Scene(root);
+        root = FXMLLoader.load(getClass().getResource("Question12.fxml"));
+        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
         quiz.setBankrollCounter(0);
     }
     @FXML
     public void noSwitchToQuestion12(ActionEvent event) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("Question12.fxml"));
-        Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
-        Scene scene = new Scene(root);
+        root = FXMLLoader.load(getClass().getResource("Question12.fxml"));
+        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
     }
     @FXML
     public void yesSwitchToProfilePage(ActionEvent event) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("profilePage.fxml"));
-        Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
-        Scene scene = new Scene(root);
+        root = FXMLLoader.load(getClass().getResource("profilePage.fxml"));
+        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
         quiz.setBankrollCounter(0);
     }
     @FXML
     public void noSwitchToProfilePage(ActionEvent event) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("profilePage.fxml"));
-        Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
-        Scene scene = new Scene(root);
+        root = FXMLLoader.load(getClass().getResource("profilePage.fxml"));
+        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
         System.out.println(quiz.getMoodCounter());
