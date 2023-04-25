@@ -207,7 +207,7 @@ public class justaGUIController {
         question.setVisible(true);
         mustacheYes2.setVisible(true);
         mustacheNo2.setVisible(true);
-        quiz.setMustacheCounter(0);
+        quiz.setMustacheCounter();
         
 
     }
@@ -235,7 +235,7 @@ public class justaGUIController {
         question.setVisible(true);
         mustacheYes3.setVisible(true);
         mustacheNo3.setVisible(true);
-        quiz.setMustacheCounter(0);
+        quiz.setMustacheCounter();
     }
     @FXML
     public void noSwitchToQuestion3(ActionEvent event) throws IOException {
@@ -259,7 +259,7 @@ public class justaGUIController {
         question.setVisible(true);
         moodYes4.setVisible(true);
         moodNo4.setVisible(true);
-        quiz.setMustacheCounter(0);
+        quiz.setMustacheCounter();
     }
     @FXML
     public void noSwitchToQuestion4(ActionEvent event) throws IOException {
@@ -355,7 +355,7 @@ public class justaGUIController {
         question.setVisible(true);
         bootyYes8.setVisible(true);
         bootyNo8.setVisible(true);
-        quiz.setBootyCounter(0);
+        quiz.setBootyCounter();
     }
     @FXML
     public void noSwitchToQuestion8(ActionEvent event) throws IOException {
@@ -379,7 +379,7 @@ public class justaGUIController {
         question.setVisible(true);
         bootyYes9.setVisible(true);
         bootyNo9.setVisible(true);
-        quiz.setBootyCounter(0);
+        quiz.setBootyCounter();
     }
     @FXML
     public void noSwitchToQuestion9(ActionEvent event) throws IOException {
@@ -402,7 +402,7 @@ public class justaGUIController {
         question.setVisible(true);
         bankrollYes10.setVisible(true);
         bankrollNo10.setVisible(true);
-        quiz.setBootyCounter(0);
+        quiz.setBootyCounter();
     }
     @FXML
     public void noSwitchToQuestion10(ActionEvent event) throws IOException {
@@ -426,7 +426,7 @@ public class justaGUIController {
         question.setVisible(true);
         bankrollYes11.setVisible(true);
         bankrollNo11.setVisible(true);
-        quiz.setBankrollCounter(0);
+        quiz.setBankrollCounter();
     }
     @FXML
     public void noSwitchToQuestion11(ActionEvent event) throws IOException {
@@ -449,7 +449,7 @@ public class justaGUIController {
         question.setVisible(true);
         bankrollYes12.setVisible(true);
         bankrollNo12.setVisible(true);
-        quiz.setBankrollCounter(0);
+        quiz.setBankrollCounter();
     }
     @FXML
     public void noSwitchToQuestion12(ActionEvent event) throws IOException {
@@ -467,7 +467,7 @@ public class justaGUIController {
     public void yesSwitchToProfilePage(ActionEvent event) throws IOException {
 
         wipeScreen();
-        quiz.setBankrollCounter(0);
+        quiz.setBankrollCounter();
         System.out.println(quiz.getMoodCounter());
     }
     @FXML
