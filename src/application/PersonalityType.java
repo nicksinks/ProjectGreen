@@ -2,13 +2,13 @@ package application;
 
 public class PersonalityType{ //this is BeymonsterType, //WarioType //TomSelleckType //etc. 
     
-    private  Traits traits; 
+
     private  String name;
     
     
-    public PersonalityType(Traits traits, String name) {
+    public PersonalityType(String name) {
         super();
-        this.traits = traits;
+
         this.name = name;
         
     }
@@ -24,11 +24,5 @@ public class PersonalityType{ //this is BeymonsterType, //WarioType //TomSelleck
     public String toString() {
         return getName();
     }
-
-    public Traits getTraits() {
-        return traits;
-    }
-
-    
 
 }

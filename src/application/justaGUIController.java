@@ -171,13 +171,7 @@ public class justaGUIController {
         
         Person person = new Person(personName.getText(), personEmail.getText());
 
-        quiz.setMoodCounter();
-        System.out.println();
-        quiz.setMoodCounter();
-        System.out.println();
-        quiz.setMoodCounter();
-        System.out.println();
-        //parent root test
+        Traits tttt = new Traits(true, true, true, true, new PersonalityType("Beymonster"));
 
         
         switchToQuestion1(event);
@@ -193,7 +187,7 @@ public class justaGUIController {
         questionLabel.setText("Question 1");
         questionLabel.setVisible(true);
         question.setText("Do you feel like you have to shave?");
-        
+        question.setVisible(true);
         mustacheYes1.setVisible(true);
         mustacheNo1.setVisible(true);
         
@@ -202,27 +196,31 @@ public class justaGUIController {
 
     
     
-    @FXML
-    public void noSwitchToQuestion2(ActionEvent event) throws IOException {
-        wipeScreen();
-        questionLabel.setText("fuck you");
-        questionLabel.setVisible(true);
-        question.setText("fuck you");
-        mustacheYes2.setVisible(true);
-        mustacheNo2.setVisible(true);
-        
-
-    } 
+ 
     @FXML
     public void yesSwitchToQuestion2(ActionEvent event) throws IOException {
 
         wipeScreen();
-        questionLabel.setText("fuck you");
+        questionLabel.setText("Question 2");
         questionLabel.setVisible(true);
-        question.setText("fuck you");
+        question.setText("fuck you");//get from Quiz Array
+        question.setVisible(true);
         mustacheYes2.setVisible(true);
         mustacheNo2.setVisible(true);
-        quiz.setMustacheCounter(0);//this should be mustache
+        quiz.setMustacheCounter(0);
+        
+
+    }
+    
+    @FXML
+    public void noSwitchToQuestion2(ActionEvent event) throws IOException {
+        wipeScreen();
+        questionLabel.setText("Question 2");
+        questionLabel.setVisible(true);
+        question.setText("fuck you");
+        question.setVisible(true);
+        mustacheYes2.setVisible(true);
+        mustacheNo2.setVisible(true);
         
 
     }
@@ -231,119 +229,252 @@ public class justaGUIController {
     public void yesSwitchToQuestion3(ActionEvent event) throws IOException {
 
         wipeScreen();
+        questionLabel.setText("Question 3");
+        questionLabel.setVisible(true);
+        question.setText("fuck you");//get from Quiz Array
+        question.setVisible(true);
+        mustacheYes3.setVisible(true);
+        mustacheNo3.setVisible(true);
         quiz.setMustacheCounter(0);
     }
     @FXML
     public void noSwitchToQuestion3(ActionEvent event) throws IOException {
 
         wipeScreen();
+        questionLabel.setText("Question 3");
+        questionLabel.setVisible(true);
+        question.setText("fuck you");//get from Quiz Array
+        question.setVisible(true);
+        mustacheYes3.setVisible(true);
+        mustacheNo3.setVisible(true);
+
     }
     @FXML
     public void yesSwitchToQuestion4(ActionEvent event) throws IOException {
 
         wipeScreen();
+        questionLabel.setText("Question 4");
+        questionLabel.setVisible(true);
+        question.setText("fuck you");//get from Quiz Array
+        question.setVisible(true);
+        moodYes4.setVisible(true);
+        moodNo4.setVisible(true);
         quiz.setMustacheCounter(0);
     }
     @FXML
     public void noSwitchToQuestion4(ActionEvent event) throws IOException {
 
         wipeScreen();
+        questionLabel.setText("Question 4");
+        questionLabel.setVisible(true);
+        question.setText("fuck you");//get from Quiz Array
+        question.setVisible(true);
+        moodYes4.setVisible(true);
+        moodNo4.setVisible(true);
+
     }
     @FXML
     public void yesSwitchToQuestion5(ActionEvent event) throws IOException {
 
         wipeScreen();
+        questionLabel.setText("Question 5");
+        questionLabel.setVisible(true);
+        question.setText("fuck you");//get from Quiz Array
+        question.setVisible(true);
+        moodYes5.setVisible(true);
+        moodYes5.setVisible(true);
         quiz.setMoodCounter();
     }
     @FXML
     public void noSwitchToQuestion5(ActionEvent event) throws IOException {
 
         wipeScreen();
+        questionLabel.setText("Question 5");
+        questionLabel.setVisible(true);
+        question.setText("fuck you");//get from Quiz Array
+        question.setVisible(true);
+        moodYes5.setVisible(true);
+        moodYes5.setVisible(true);
+
     }
     @FXML
     public void yesSwitchToQuestion6(ActionEvent event) throws IOException {
 
         wipeScreen();
+        questionLabel.setText("Question 6");
+        questionLabel.setVisible(true);
+        question.setText("fuck you");//get from Quiz Array
+        question.setVisible(true);
+        moodYes6.setVisible(true);
+        moodYes6.setVisible(true);
         quiz.setMoodCounter();
     }
     @FXML
     public void noSwitchToQuestion6(ActionEvent event) throws IOException {
 
         wipeScreen();
+        questionLabel.setText("Question 6");
+        questionLabel.setVisible(true);
+        question.setText("fuck you");//get from Quiz Array
+        question.setVisible(true);
+        moodYes6.setVisible(true);
+        moodYes6.setVisible(true);
+
     }
     @FXML
     public void yesSwitchToQuestion7(ActionEvent event) throws IOException {
 
         wipeScreen();
+        questionLabel.setText("Question 7");
+        questionLabel.setVisible(true);
+        question.setText("fuck you");//get from Quiz Array
+        question.setVisible(true);
+        bootyYes7.setVisible(true);
+        bootyNo7.setVisible(true);
         quiz.setMoodCounter();
     }
     @FXML
     public void noSwitchToQuestion7(ActionEvent event) throws IOException {
 
         wipeScreen();
+        questionLabel.setText("Question 7");
+        questionLabel.setVisible(true);
+        question.setText("fuck you");//get from Quiz Array
+        question.setVisible(true);
+        bootyYes7.setVisible(true);
+        bootyNo7.setVisible(true);
+        
     }
     @FXML
     public void yesSwitchToQuestion8(ActionEvent event) throws IOException {
 
         wipeScreen();
+        questionLabel.setText("Question 8");
+        questionLabel.setVisible(true);
+        question.setText("fuck you");//get from Quiz Array
+        question.setVisible(true);
+        bootyYes8.setVisible(true);
+        bootyNo8.setVisible(true);
         quiz.setBootyCounter(0);
     }
     @FXML
     public void noSwitchToQuestion8(ActionEvent event) throws IOException {
 
         wipeScreen();
+        questionLabel.setText("Question 8");
+        questionLabel.setVisible(true);
+        question.setText("fuck you");//get from Quiz Array
+        question.setVisible(true);
+        bootyYes8.setVisible(true);
+        bootyNo8.setVisible(true);
+        
     }    
     @FXML
     public void yesSwitchToQuestion9(ActionEvent event) throws IOException {
 
         wipeScreen();
+        questionLabel.setText("Question 9");
+        questionLabel.setVisible(true);
+        question.setText("fuck you");//get from Quiz Array
+        question.setVisible(true);
+        bootyYes9.setVisible(true);
+        bootyNo9.setVisible(true);
         quiz.setBootyCounter(0);
     }
     @FXML
     public void noSwitchToQuestion9(ActionEvent event) throws IOException {
 
         wipeScreen();
+        questionLabel.setText("Question 9");
+        questionLabel.setVisible(true);
+        question.setText("fuck you");//get from Quiz Array
+        question.setVisible(true);
+        bootyYes9.setVisible(true);
+        bootyNo9.setVisible(true);
+
     }
     public void yesSwitchToQuestion10(ActionEvent event) throws IOException {
 
         wipeScreen();
+        questionLabel.setText("Question 10");
+        questionLabel.setVisible(true);
+        question.setText("fuck you");//get from Quiz Array
+        question.setVisible(true);
+        bankrollYes10.setVisible(true);
+        bankrollNo10.setVisible(true);
+        quiz.setBootyCounter(0);
     }
     @FXML
     public void noSwitchToQuestion10(ActionEvent event) throws IOException {
 
         wipeScreen();
+        questionLabel.setText("Question 10");
+        questionLabel.setVisible(true);
+        question.setText("fuck you");//get from Quiz Array
+        question.setVisible(true);
+        bankrollYes10.setVisible(true);
+        bankrollNo10.setVisible(true);
+
     }
     @FXML
     public void yesSwitchToQuestion11(ActionEvent event) throws IOException {
 
         wipeScreen();
+        questionLabel.setText("Question 11");
+        questionLabel.setVisible(true);
+        question.setText("fuck you");//get from Quiz Array
+        question.setVisible(true);
+        bankrollYes11.setVisible(true);
+        bankrollNo11.setVisible(true);
         quiz.setBankrollCounter(0);
     }
     @FXML
     public void noSwitchToQuestion11(ActionEvent event) throws IOException {
 
         wipeScreen();
+        questionLabel.setText("Question 11");
+        questionLabel.setVisible(true);
+        question.setText("fuck you");//get from Quiz Array
+        question.setVisible(true);
+        bankrollYes11.setVisible(true);
+        bankrollNo11.setVisible(true);
     }
     @FXML
     public void yesSwitchToQuestion12(ActionEvent event) throws IOException {
 
         wipeScreen();
+        questionLabel.setText("Question 12");
+        questionLabel.setVisible(true);
+        question.setText("fuck you");//get from Quiz Array
+        question.setVisible(true);
+        bankrollYes12.setVisible(true);
+        bankrollNo12.setVisible(true);
         quiz.setBankrollCounter(0);
     }
     @FXML
     public void noSwitchToQuestion12(ActionEvent event) throws IOException {
 
         wipeScreen();
+        questionLabel.setText("Question 12");
+        questionLabel.setVisible(true);
+        question.setText("fuck you");//get from Quiz Array
+        question.setVisible(true);
+        bankrollYes12.setVisible(true);
+        bankrollNo12.setVisible(true);
+   
     }
     @FXML
     public void yesSwitchToProfilePage(ActionEvent event) throws IOException {
 
         wipeScreen();
+        quiz.setBankrollCounter(0);
+        System.out.println(quiz.getMoodCounter());
     }
     @FXML
     public void noSwitchToProfilePage(ActionEvent event) throws IOException {
 
         wipeScreen();
+        System.out.println(quiz.getMoodCounter());
     }
     //
     

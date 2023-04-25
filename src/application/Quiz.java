@@ -29,11 +29,9 @@ public class Quiz {
 
 
     public void setMoodCounter() {
-        System.out.println("test" + this.moodCounter);
-        
+ 
         this.moodCounter++;
         
-        System.out.println("test after" + this.moodCounter);
     }
 
 
@@ -44,8 +42,8 @@ public class Quiz {
 
 
 
-    public void setMustacheCounter(int mustacheCounter) {
-        this.mustacheCounter = mustacheCounter;
+    public void setMustacheCounter() {
+        this.mustacheCounter++;
     }
 
 
@@ -56,8 +54,8 @@ public class Quiz {
 
 
 
-    public void setBootyCounter(int bootyCounter) {
-        this.bootyCounter = bootyCounter;
+    public void setBootyCounter() {
+        this.bootyCounter++;
     }
 
 
@@ -68,55 +66,22 @@ public class Quiz {
 
 
 
-    public void setBankrollCounter(int bankrollCounter) {
-        this.bankrollCounter = bankrollCounter;
+    public void setBankrollCounter() {
+        this.bankrollCounter++;
     }
 
 
 
-//    public void addPerson() {
-//        try {
-//            
-//            //open a file here containing our stored Persons. skip step 1 for now
-//            //Create an ArrayList of Persons
-//            
-//            
-//            //Add new person to ArrayList of Persons
-//            //Person.add(new Person(their name input, their email input)
-//            String name = "some name from asking";
-//            String email = "some email from asking";
-//            Person person = new Person(name, email);//text from gui, text from gui
-//            
-//            
-//            //ArrayList personList = new ArrayList()
-//            //PersonList for loop to pull from file, maybe
-//            //personList.add(person);
-//              
-//        }
-//        catch (Exception e) {
-//            e.printStackTrace();
-//        }
-//    }
-//    
+ 
 
     
-    public void getAnswers() {
-        
-        
-        
- 
-        
-        // Display a question and two answer buttons and a next button(12 times)
-        
-        //listener handler for one button does moodCounter++&next and the other button just does next.  
-        
-        // ask 3 questions for each trait.  One answer ups the counter.   One answer does nothing.  
-        
-       
+    public int[] getAnswers() {
         
         
         int [] answerCounter = new int[] {moodCounter,mustacheCounter,bootyCounter,bankrollCounter};
-        //setTraitsFromQuizAnswers(answerCounter);
+        
+        return answerCounter;
+
    
 
     }
