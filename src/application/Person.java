@@ -9,9 +9,9 @@ package application;
  */
 public class Person {
     
-    String name;
-    String email;
-    Traits yourTraits;//maybe this is just the array of traits//maybe this is just Traits
+    private String name;
+    private String email;
+    private Traits yourTraits;//maybe this is just the array of traits//maybe this is just Traits
     /**
      * @param name
      * @param email
@@ -44,10 +44,15 @@ public class Person {
        
     }
     
-    public int compareTo(Person x) {
-        return 1;
+    public Traits getTraits() {
+        return this.yourTraits;
     }
     
+    public PersonalityType getPersonality() {
+        return this.yourTraits.getPersonalityType();
+        
+    }
+
     @Override
     public String toString() {
         return "" + getName() + "" ;

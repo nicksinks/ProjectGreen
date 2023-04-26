@@ -23,6 +23,7 @@ import javafx.scene.Scene;
 public class justaGUIController {
     
     Quiz quiz = new Quiz();
+    Person person;
     private Parent root;
     private Stage stage;
     private Scene scene;
@@ -120,6 +121,9 @@ public class justaGUIController {
     
     @FXML
     private Label question;
+    
+    @FXML
+    private Label youAre;
 
     @FXML
     private ImageView beyowolf;
@@ -156,7 +160,7 @@ public class justaGUIController {
 
     @FXML
     void exit(ActionEvent event) {
-
+        Platform.exit();
     }
 
 
@@ -219,10 +223,26 @@ public class justaGUIController {
 
         wipeScreen();
         
-        Person person = new Person(personName.getText(), personEmail.getText());
+        person = new Person(personName.getText(), personEmail.getText());
 
-        Traits tttt = new Traits(true, true, true, true, new PersonalityType("Beymonster"));
-
+        Traits tttt = new Traits(true, true, true, true, new PersonalityType("Beyowolf","You're a bad mother shut your mouth.   You are more moody and have more booty, mustache, and bankroll than anybody."));
+        Traits tttf = new Traits(true, true, true, false, new PersonalityType( "Wario",""));
+        Traits ttft = new Traits(true, true, false, true, new PersonalityType( "Prince",""));
+        Traits ttff = new Traits(true, true, false, false, new PersonalityType( "Ron Swanson",""));
+        Traits tftt = new Traits(true, false, true, true, new PersonalityType( "Ri Ri",""));
+        Traits tftf = new Traits(true, false, true, false, new PersonalityType("Jessica Rabbit",""));
+        Traits tfft = new Traits(true, false, false, true, new PersonalityType( "Mister Burns",""));
+        Traits tfff = new Traits(true, false, false, false, new PersonalityType( "Lindsay Lohan",""));
+        Traits fttt = new Traits(false, true, true, true,  new PersonalityType("Tom Selleck",""));
+        Traits fttf = new Traits(false, true, true, false, new PersonalityType("Corgi",""));
+        Traits ftft = new Traits(false, true, false, true, new PersonalityType("George Clooney",""));
+        Traits ftff = new Traits(false, true, false, false, new PersonalityType("Jesus Christ, Lamb of God",""));
+        Traits fftt = new Traits(false, false, true, true, new PersonalityType("Sofia Vergara",""));
+        Traits fftf = new Traits(false, false, true, false, new PersonalityType("Patrick Star",""));
+        Traits ffft = new Traits(false, false, false, true, new PersonalityType( "Forrest Gump",""));
+        Traits ffff = new Traits(false, false, false, false, new PersonalityType("Lima Bean",""));
+        
+        Traits[] personalities = {tttt,tttf,ttft,ttff,tftt,tftf,tfft,tfff,fttt,fttf,ftft,ftff,fftt,fftf,ffft,ffff};
         
         switchToQuestion1(event);
 
@@ -520,6 +540,23 @@ public class justaGUIController {
         wipeScreen();
         quiz.setBankrollCounter();
         System.out.println(quiz.getMoodCounter());//just a test line
+        System.out.println(quiz.getMustacheCounter());//just a test line
+        System.out.println(quiz.getBootyCounter());//just a test line
+        System.out.println(quiz.getBankrollCounter());//just a test line
+        person.setTraits(quiz.setTraitsFromQuizAnswers(quiz.getAnswers()));
+        System.out.println(person.getTraits());
+        System.out.println(person.getPersonality());
+
+        root = FXMLLoader.load(getClass().getResource("profilePage0Beyowolf.fxml"));
+        Scene scene = new Scene(root,675,400);
+        scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
+        Stage stage = new Stage();
+        stage.setScene(scene);
+        stage.show();
+        
+
+        
+        
         //quiz.setTraitstoPerson;
         //quiz.searchTraitsArrayforPersonalityType
         //Display said personality type.
@@ -530,6 +567,15 @@ public class justaGUIController {
         wipeScreen();
         System.out.println(quiz.getMoodCounter());
     }
-    //
     
+    
+    
+
+
+
+
+  
+
+  
 }
+    

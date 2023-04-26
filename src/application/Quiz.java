@@ -2,12 +2,30 @@ package application;
 
 import java.util.Random;
 
+
 public class Quiz {
     
     
     private int moodCounter, mustacheCounter, bootyCounter, bankrollCounter;
     private String[] questions = new String[12]; 
     private static Random rand = new Random();
+    Traits tttt = new Traits(true, true, true, true, new PersonalityType("Beyowolf",""));
+    Traits tttf = new Traits(true, true, true, false, new PersonalityType( "Wario",""));
+    Traits ttft = new Traits(true, true, false, true, new PersonalityType( "Prince",""));
+    Traits ttff = new Traits(true, true, false, false, new PersonalityType( "Ron Swanson",""));
+    Traits tftt = new Traits(true, false, true, true, new PersonalityType( "Ri Ri",""));
+    Traits tftf = new Traits(true, false, true, false, new PersonalityType("Jessica Rabbit",""));
+    Traits tfft = new Traits(true, false, false, true, new PersonalityType( "Mister Burns",""));
+    Traits tfff = new Traits(true, false, false, false, new PersonalityType( "Lindsay Lohan",""));
+    Traits fttt = new Traits(false, true, true, true,  new PersonalityType("Tom Selleck",""));
+    Traits fttf = new Traits(false, true, true, false, new PersonalityType("Corgi",""));
+    Traits ftft = new Traits(false, true, false, true, new PersonalityType("George Clooney",""));
+    Traits ftff = new Traits(false, true, false, false, new PersonalityType("Jesus Christ, Lamb of God",""));
+    Traits fftt = new Traits(false, false, true, true, new PersonalityType("Sofia Vergara",""));
+    Traits fftf = new Traits(false, false, true, false, new PersonalityType("Patrick Star",""));
+    Traits ffft = new Traits(false, false, false, true, new PersonalityType( "Forrest Gump",""));
+    Traits ffff = new Traits(false, false, false, false, new PersonalityType("Lima Bean",""));
+    Traits[] personalities = {tttt,tttf,ttft,ttff,tftt,tftf,tfft,tfff,fttt,fttf,ftft,ftff,fftt,fftf,ffft,ffff};
 
 
 
@@ -224,12 +242,12 @@ public class Quiz {
     public String mustacheQuestions (int x) {
         
         String[] mustacheQuestion = new String[6];
-        mustacheQuestion[0] = "Are you salty?";
-        mustacheQuestion[1] = "Do you ever feel like you have to smack a hoe?";
-        mustacheQuestion[2] = "Should we talk to you before you've had your coffee?";
-        mustacheQuestion[3] = "Do you have that special kind of sass?";
-        mustacheQuestion[4] = "Have you ever been described as emotional?";
-        mustacheQuestion[5] = "Do you prefer chips over sweets?";
+        mustacheQuestion[0] = "Does anyone ever tell you that you need to shave?";
+        mustacheQuestion[1] = "Does your five o'clock shadow happen at eleven a.m.?";
+        mustacheQuestion[2] = "Are your handlebars fit for Sam Elliot?";
+        mustacheQuestion[3] = "Has your significant other ever referred to you as a \"Marlboro Man\"?";
+        mustacheQuestion[4] = "Do you avoid taking a razor to your upper lip?";
+        mustacheQuestion[5] = "Have you ever been mistaken for Wilford Brimley?";
         return mustacheQuestion[x];
         
     }
@@ -237,12 +255,12 @@ public class Quiz {
     public String bootyQuestions(int x) {
         
         String[] bootyQuestion = new String[6];
-        bootyQuestion[0] = "Are you salty?";
-        bootyQuestion[1] = "Do you ever feel like you have to smack a hoe?";
-        bootyQuestion[2] = "Should we talk to you before you've had your coffee?";
-        bootyQuestion[3] = "Do you have that special kind of sass?";
-        bootyQuestion[4] = "Have you ever been described as emotional?";
-        bootyQuestion[5] = "Do you prefer chips over sweets?";
+        bootyQuestion[0] = "You got junk in your trunk?";
+        bootyQuestion[1] = "Have you successfully completed \"Megan Thighs\"?";
+        bootyQuestion[2] = "Has anyone mistaken you for a Kardashian?";
+        bootyQuestion[3] = "Do you have that special kind of ass?";
+        bootyQuestion[4] = "Have you ever been described as thick?";
+        bootyQuestion[5] = "Is your booty poppin'?";
         return bootyQuestion[x];
         
     }
@@ -250,12 +268,12 @@ public class Quiz {
     public String bankrollQuestions(int x) {
         
         String[] bankrollQuestion = new String[6];
-        bankrollQuestion[0] = "Are you salty?";
-        bankrollQuestion[1] = "Do you ever feel like you have to smack a hoe?";
-        bankrollQuestion[2] = "Should we talk to you before you've had your coffee?";
-        bankrollQuestion[3] = "Do you have that special kind of sass?";
-        bankrollQuestion[4] = "Have you ever been described as emotional?";
-        bankrollQuestion[5] = "Do you prefer chips over sweets?";
+        bankrollQuestion[0] = "Are you rollin with a fat wallet?";
+        bankrollQuestion[1] = "Does your bank account have multiple zeroes?";
+        bankrollQuestion[2] = "Do you have mo problems?";
+        bankrollQuestion[3] = "Is there any jet fuel on your energy bill?";
+        bankrollQuestion[4] = "Have you ever thought \"I should buy a boat.\"?";
+        bankrollQuestion[5] = "Are you making it rain right now?";
         return bankrollQuestion[x];
         
     }
@@ -264,11 +282,58 @@ public class Quiz {
         return this.questions[questionNumber];
     }
     
-    
+    /**
+     * 
+     * @param x
+     * @return   
+     * 
+     * This method returns the object trait which were set by the quiz answers
+     * The calling method in the controller will set the Traits to the Person's Trait parameter
+     */
+    public Traits setTraitsFromQuizAnswers(int[] x) {
+        //if answers are 2 or 3 of 3, set Traits value to true
+        //if answers are 0 or 1 of 3, set Traits value to false  
+        boolean mood, mustache, booty, bankroll;
+      
 
+        if (x[0] < 2) {
+            mood = false;
+        } else {
+            mood = true;
+        }
 
+        if (x[1] < 2) {
+            mustache = false;
+        } else {
+            mustache = true;
+        }
+        if (x[2] < 2) {
+            booty = false;
+        } else {
+            booty = true;
+        }
+        if (x[3] < 2) {
+            bankroll = false;
+        } else {
+            bankroll = true;
+        }
+        
+        Traits yourTraits = null;
+        
+        for (int i = 0; i<personalities.length; i++) {
+                
+                if (personalities[i].isMood() == mood && personalities[i].isBooty() == booty 
+                        && personalities[i].isBankroll() == bankroll && personalities[i].isMustache() == mustache) {
+                    yourTraits = personalities[i];
+                    
+                }
+                
+        }
 
- 
+        
+        return yourTraits; 
+        
+    }
 
     
     public int[] getAnswers() {
@@ -280,51 +345,11 @@ public class Quiz {
     }
     
     
-    
-//    public Traits setTraitsFromQuizAnswers(int[] x) {
-//        //if answers are 2 or 3 of 3, set Traits value to true
-//        //if answers are 0 or 1 of 3, set Traits value to false  
-//        boolean mood, mustache, booty, bankroll;
-//        
-//        if (x[0] < 2) {
-//            mood = false;
-//        } else {
-//            mood = true;
-//        }
-//        
-//        if (x[1] < 2) {
-//            mustache = false;
-//        } else {
-//            mustache = true;
-//        }
-//        if (x[2] < 2) {
-//            booty = false;
-//        } else {
-//            booty = true;
-//        }
-//        if (x[3] < 2) {
-//            bankroll = false;
-//        } else {
-//            bankroll = true;
-//        }
-//        
-//        
-//        
-////        Traits yourTraits = new Traits(mood, mustache, booty, bankroll);
-////        person.setTraits(yourTraits);
-////       return yourTraits; 
-//
-//        
-//        
-//        
-//    }
-    
-    
-
-        
-
-        
 }
+    
+    
+    
+
 
 
 
