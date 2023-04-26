@@ -9,6 +9,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.image.ImageView;
+import javafx.scene.layout.VBox;
 import javafx.scene.paint.Color;
 import javafx.scene.text.Font;
 import javafx.scene.text.FontWeight;
@@ -211,7 +212,10 @@ public class justaGUIController {
 
     @FXML
     void newQuiz(ActionEvent event) throws IOException {
+
         root = FXMLLoader.load(getClass().getResource("justaGUI.fxml"));
+
+
 
         wipeScreen();
         
@@ -228,11 +232,12 @@ public class justaGUIController {
     
     @FXML
 
-    public void switchToQuestion1(ActionEvent event) throws IOException {
+    public void switchToQuestion1(ActionEvent event) throws IOException {    
+
         wipeScreen();
         questionLabel.setText("Question 1");
         questionLabel.setVisible(true);
-        question.setText("Do you feel like you have to shave?");
+        question.setText(quiz.getQuestion(0));
         question.setVisible(true);
         mustacheYes1.setVisible(true);
         mustacheNo1.setVisible(true);
@@ -249,7 +254,7 @@ public class justaGUIController {
         wipeScreen();
         questionLabel.setText("Question 2");
         questionLabel.setVisible(true);
-        question.setText("fuck you");//get from Quiz Array
+        question.setText(quiz.getQuestion(1));
         question.setVisible(true);
         mustacheYes2.setVisible(true);
         mustacheNo2.setVisible(true);
@@ -263,7 +268,7 @@ public class justaGUIController {
         wipeScreen();
         questionLabel.setText("Question 2");
         questionLabel.setVisible(true);
-        question.setText("fuck you");
+        question.setText(quiz.getQuestion(1));
         question.setVisible(true);
         mustacheYes2.setVisible(true);
         mustacheNo2.setVisible(true);
@@ -277,7 +282,7 @@ public class justaGUIController {
         wipeScreen();
         questionLabel.setText("Question 3");
         questionLabel.setVisible(true);
-        question.setText("fuck you");//get from Quiz Array
+        question.setText(quiz.getQuestion(2));
         question.setVisible(true);
         mustacheYes3.setVisible(true);
         mustacheNo3.setVisible(true);
@@ -289,7 +294,7 @@ public class justaGUIController {
         wipeScreen();
         questionLabel.setText("Question 3");
         questionLabel.setVisible(true);
-        question.setText("fuck you");//get from Quiz Array
+        question.setText(quiz.getQuestion(2));
         question.setVisible(true);
         mustacheYes3.setVisible(true);
         mustacheNo3.setVisible(true);
@@ -301,7 +306,7 @@ public class justaGUIController {
         wipeScreen();
         questionLabel.setText("Question 4");
         questionLabel.setVisible(true);
-        question.setText("fuck you");//get from Quiz Array
+        question.setText(quiz.getQuestion(3));
         question.setVisible(true);
         moodYes4.setVisible(true);
         moodNo4.setVisible(true);
@@ -313,7 +318,7 @@ public class justaGUIController {
         wipeScreen();
         questionLabel.setText("Question 4");
         questionLabel.setVisible(true);
-        question.setText("fuck you");//get from Quiz Array
+        question.setText(quiz.getQuestion(3));
         question.setVisible(true);
         moodYes4.setVisible(true);
         moodNo4.setVisible(true);
@@ -325,7 +330,7 @@ public class justaGUIController {
         wipeScreen();
         questionLabel.setText("Question 5");
         questionLabel.setVisible(true);
-        question.setText("fuck you");//get from Quiz Array
+        question.setText(quiz.getQuestion(4));
         question.setVisible(true);
         moodYes5.setVisible(true);
         moodNo5.setVisible(true);
@@ -337,7 +342,7 @@ public class justaGUIController {
         wipeScreen();
         questionLabel.setText("Question 5");
         questionLabel.setVisible(true);
-        question.setText("fuck you");//get from Quiz Array
+        question.setText(quiz.getQuestion(4));
         question.setVisible(true);
         moodYes5.setVisible(true);
         moodNo5.setVisible(true);
@@ -349,7 +354,7 @@ public class justaGUIController {
         wipeScreen();
         questionLabel.setText("Question 6");
         questionLabel.setVisible(true);
-        question.setText("fuck you");//get from Quiz Array
+        question.setText(quiz.getQuestion(5));
         question.setVisible(true);
         moodYes6.setVisible(true);
         moodNo6.setVisible(true);
@@ -361,7 +366,7 @@ public class justaGUIController {
         wipeScreen();
         questionLabel.setText("Question 6");
         questionLabel.setVisible(true);
-        question.setText("fuck you");//get from Quiz Array
+        question.setText(quiz.getQuestion(5));
         question.setVisible(true);
         moodYes6.setVisible(true);
         moodNo6.setVisible(true);
@@ -373,7 +378,7 @@ public class justaGUIController {
         wipeScreen();
         questionLabel.setText("Question 7");
         questionLabel.setVisible(true);
-        question.setText("fuck you");//get from Quiz Array
+        question.setText(quiz.getQuestion(6));
         question.setVisible(true);
         bootyYes7.setVisible(true);
         bootyNo7.setVisible(true);
@@ -385,7 +390,7 @@ public class justaGUIController {
         wipeScreen();
         questionLabel.setText("Question 7");
         questionLabel.setVisible(true);
-        question.setText("fuck you");//get from Quiz Array
+        question.setText(quiz.getQuestion(6));
         question.setVisible(true);
         bootyYes7.setVisible(true);
         bootyNo7.setVisible(true);
@@ -397,7 +402,7 @@ public class justaGUIController {
         wipeScreen();
         questionLabel.setText("Question 8");
         questionLabel.setVisible(true);
-        question.setText("fuck you");//get from Quiz Array
+        question.setText(quiz.getQuestion(7));
         question.setVisible(true);
         bootyYes8.setVisible(true);
         bootyNo8.setVisible(true);
@@ -409,7 +414,7 @@ public class justaGUIController {
         wipeScreen();
         questionLabel.setText("Question 8");
         questionLabel.setVisible(true);
-        question.setText("fuck you");//get from Quiz Array
+        question.setText(quiz.getQuestion(7));
         question.setVisible(true);
         bootyYes8.setVisible(true);
         bootyNo8.setVisible(true);
@@ -421,7 +426,7 @@ public class justaGUIController {
         wipeScreen();
         questionLabel.setText("Question 9");
         questionLabel.setVisible(true);
-        question.setText("fuck you");//get from Quiz Array
+        question.setText(quiz.getQuestion(8));
         question.setVisible(true);
         bootyYes9.setVisible(true);
         bootyNo9.setVisible(true);
@@ -433,7 +438,7 @@ public class justaGUIController {
         wipeScreen();
         questionLabel.setText("Question 9");
         questionLabel.setVisible(true);
-        question.setText("fuck you");//get from Quiz Array
+        question.setText(quiz.getQuestion(8));
         question.setVisible(true);
         bootyYes9.setVisible(true);
         bootyNo9.setVisible(true);
@@ -444,7 +449,7 @@ public class justaGUIController {
         wipeScreen();
         questionLabel.setText("Question 10");
         questionLabel.setVisible(true);
-        question.setText("fuck you");//get from Quiz Array
+        question.setText(quiz.getQuestion(9));
         question.setVisible(true);
         bankrollYes10.setVisible(true);
         bankrollNo10.setVisible(true);
@@ -456,7 +461,7 @@ public class justaGUIController {
         wipeScreen();
         questionLabel.setText("Question 10");
         questionLabel.setVisible(true);
-        question.setText("fuck you");//get from Quiz Array
+        question.setText(quiz.getQuestion(9));
         question.setVisible(true);
         bankrollYes10.setVisible(true);
         bankrollNo10.setVisible(true);
@@ -468,7 +473,7 @@ public class justaGUIController {
         wipeScreen();
         questionLabel.setText("Question 11");
         questionLabel.setVisible(true);
-        question.setText("fuck you");//get from Quiz Array
+        question.setText(quiz.getQuestion(10));
         question.setVisible(true);
         bankrollYes11.setVisible(true);
         bankrollNo11.setVisible(true);
@@ -480,7 +485,7 @@ public class justaGUIController {
         wipeScreen();
         questionLabel.setText("Question 11");
         questionLabel.setVisible(true);
-        question.setText("fuck you");//get from Quiz Array
+        question.setText(quiz.getQuestion(10));
         question.setVisible(true);
         bankrollYes11.setVisible(true);
         bankrollNo11.setVisible(true);
@@ -491,7 +496,7 @@ public class justaGUIController {
         wipeScreen();
         questionLabel.setText("Question 12");
         questionLabel.setVisible(true);
-        question.setText("fuck you");//get from Quiz Array
+        question.setText(quiz.getQuestion(11));
         question.setVisible(true);
         bankrollYes12.setVisible(true);
         bankrollNo12.setVisible(true);
@@ -503,7 +508,7 @@ public class justaGUIController {
         wipeScreen();
         questionLabel.setText("Question 12");
         questionLabel.setVisible(true);
-        question.setText("fuck you");//get from Quiz Array
+        question.setText(quiz.getQuestion(11));
         question.setVisible(true);
         bankrollYes12.setVisible(true);
         bankrollNo12.setVisible(true);
