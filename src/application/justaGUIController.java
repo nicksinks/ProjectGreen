@@ -8,6 +8,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+import javafx.scene.image.ImageView;
 import javafx.scene.paint.Color;
 import javafx.scene.text.Font;
 import javafx.scene.text.FontWeight;
@@ -118,6 +119,9 @@ public class justaGUIController {
     
     @FXML
     private Label question;
+    
+    @FXML
+    private ImageView beyowolf;
 
     @FXML
     void exit(ActionEvent event) {
@@ -157,6 +161,7 @@ public class justaGUIController {
         bankrollNo12.setVisible(false);  
         questionLabel.setVisible(false);
         question.setVisible(false);
+        beyowolf.setVisible(false);
     }
    
     
