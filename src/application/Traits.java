@@ -44,7 +44,7 @@ public class Traits {
     }
 
     public PersonalityType getPersonalityType() {
-        return personalityType;
+        return this.personalityType;
     }
     @Override
     public String toString() {
@@ -70,8 +70,9 @@ public class Traits {
         } else {
             mood = "less moody";
         }
+        PersonalityType personalityDescription = getPersonalityType();
         String traitsDescription;
-        traitsDescription = "You are " + mood + ", " + mustache + ", " + booty + ", " + bankroll;
+        traitsDescription = "You are " + mood + ", " + mustache + ", " + booty + ", " + bankroll + ".  That makes you a " + personalityDescription;
         return traitsDescription;
     }
 

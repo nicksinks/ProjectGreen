@@ -9,22 +9,22 @@ public class Quiz {
     private int moodCounter, mustacheCounter, bootyCounter, bankrollCounter;
     private String[] questions = new String[12]; 
     private static Random rand = new Random();
-    Traits tttt = new Traits(true, true, true, true, new PersonalityType("Beyowolf",""));
-    Traits tttf = new Traits(true, true, true, false, new PersonalityType( "Wario",""));
-    Traits ttft = new Traits(true, true, false, true, new PersonalityType( "Prince",""));
-    Traits ttff = new Traits(true, true, false, false, new PersonalityType( "Ron Swanson",""));
-    Traits tftt = new Traits(true, false, true, true, new PersonalityType( "Ri Ri",""));
-    Traits tftf = new Traits(true, false, true, false, new PersonalityType("Jessica Rabbit",""));
-    Traits tfft = new Traits(true, false, false, true, new PersonalityType( "Mister Burns",""));
-    Traits tfff = new Traits(true, false, false, false, new PersonalityType( "Lindsay Lohan",""));
-    Traits fttt = new Traits(false, true, true, true,  new PersonalityType("Tom Selleck",""));
-    Traits fttf = new Traits(false, true, true, false, new PersonalityType("Corgi",""));
-    Traits ftft = new Traits(false, true, false, true, new PersonalityType("George Clooney",""));
-    Traits ftff = new Traits(false, true, false, false, new PersonalityType("Jesus Christ, Lamb of God",""));
-    Traits fftt = new Traits(false, false, true, true, new PersonalityType("Sofia Vergara",""));
-    Traits fftf = new Traits(false, false, true, false, new PersonalityType("Patrick Star",""));
-    Traits ffft = new Traits(false, false, false, true, new PersonalityType( "Forrest Gump",""));
-    Traits ffff = new Traits(false, false, false, false, new PersonalityType("Lima Bean",""));
+    Traits tttt = new Traits(true, true, true, true, new PersonalityType("Beyowolf","You're a bad mother shut your mouth. You are more moody and have more booty, mustache, and bankroll than anybody."));
+    Traits tttf = new Traits(true, true, true, false, new PersonalityType( "Wario","Look at that wirey lip ferret. I bet it makes you pretty mad.  At least you got some booty, though."));
+    Traits ttft = new Traits(true, true, false, true, new PersonalityType( "Prince","We'll tell you about your personality once you purify yourself in the waters of Lake Minnetonka."));
+    Traits ttff = new Traits(true, true, false, false, new PersonalityType( "Ron Swanson","The way you see it, government is about doing as little as possible.  And letting that mustache grow."));
+    Traits tftt = new Traits(true, false, true, true, new PersonalityType( "Ri Ri","You are the finest kind.  All that booty, moody bankroll... and no mustache."));
+    Traits tftf = new Traits(true, false, true, false, new PersonalityType("Jessica Rabbit","Are you in need of a detective?  You probably won't have anything to pay with."));
+    Traits tfft = new Traits(true, false, false, true, new PersonalityType( "Mister Burns","If you spent a little more time growing your mustache and doing squats, maybe the folks at the power plant wouldn't go on strike so often."));
+    Traits tfff = new Traits(true, false, false, false, new PersonalityType( "Lindsay Lohan","Nothing but moody here.  Can't find a booty, a mustache, or a bankroll anywhere."));
+    Traits fttt = new Traits(false, true, true, true,  new PersonalityType("Tom Selleck","Sure you're kind.  Sure you've got a mustache.  Sure you've got money.  Sure you've got a body.  It's the, uhhh, total package."));
+    Traits fttf = new Traits(false, true, true, false, new PersonalityType("Corgi","Rump Rump Rump Rump"));
+    Traits ftft = new Traits(false, true, false, true, new PersonalityType("George Clooney","Oh look, it's Mr. Alamuddin himself.  Go help your wife."));
+    Traits ftff = new Traits(false, true, false, false, new PersonalityType("Jesus Christ, Lamb of God","Do you find yourself turning the other cheek.  Well, we have news for you."));
+    Traits fftt = new Traits(false, false, true, true, new PersonalityType("Sofia Vergara","An angel, you've got nothing but booty and bankroll.  And a little accent."));
+    Traits fftf = new Traits(false, false, true, false, new PersonalityType("Patrick Star","You've got nothing but rumpus, but it's okay."));
+    Traits ffft = new Traits(false, false, false, true, new PersonalityType( "Forrest Gump","Mama always said life was like a box of chocolates.  You meet a lot of celebrities and get rich accidentally."));
+    Traits ffff = new Traits(false, false, false, false, new PersonalityType("Lima Bean","You are a Lima bean.  You are devoid of personality.  You are missing all aspects of booty, moody, bankroll, and mustache."));
     Traits[] personalities = {tttt,tttf,ttft,ttff,tftt,tftf,tfft,tfff,fttt,fttf,ftft,ftff,fftt,fftf,ffft,ffff};
 
 
@@ -36,6 +36,7 @@ public class Quiz {
         this.bootyCounter = 0;
         this.bankrollCounter = 0;
         this.questions = createQuestions();
+        //this.personalities set from file?  create a method.
        
     }
     

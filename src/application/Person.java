@@ -41,21 +41,21 @@ public class Person {
     public void setTraits(Traits traits){
         
         this.yourTraits = traits;
-       
+        
     }
     
     public Traits getTraits() {
         return this.yourTraits;
     }
     
-    public PersonalityType getPersonality() {
+    public PersonalityType getPersonalityType() {
         return this.yourTraits.getPersonalityType();
-        
     }
+  
 
     @Override
     public String toString() {
-        return "" + getName() + "" ;
+        return "" + getName() + " " + getPersonalityType().getName();
     }
     
     

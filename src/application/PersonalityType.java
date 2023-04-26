@@ -24,7 +24,7 @@ public class PersonalityType{ //this is BeymonsterType, //WarioType //TomSelleck
     }
     
     public String toString() {
-        String description = getDescription();
+        String description = this.description;
         return description;
         
     }
