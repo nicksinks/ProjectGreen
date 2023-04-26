@@ -119,9 +119,39 @@ public class justaGUIController {
     
     @FXML
     private Label question;
-    
+
     @FXML
     private ImageView beyowolf;
+
+    @FXML
+    private ImageView burns;
+
+    @FXML
+    private ImageView corgi;
+
+    @FXML
+    private ImageView georgeClooney;
+
+    @FXML
+    private ImageView lindsayLohan;
+
+    @FXML
+    private ImageView patrick;
+
+    @FXML
+    private ImageView prince;
+
+    @FXML
+    private ImageView rihanna;
+
+    @FXML
+    private ImageView ronSwanson;
+
+    @FXML
+    private ImageView tomSelleck;
+
+    @FXML
+    private ImageView wario;
 
     @FXML
     void exit(ActionEvent event) {
@@ -162,6 +192,17 @@ public class justaGUIController {
         questionLabel.setVisible(false);
         question.setVisible(false);
         beyowolf.setVisible(false);
+        burns.setVisible(false);
+        corgi.setVisible(false);
+        georgeClooney.setVisible(false);
+        lindsayLohan.setVisible(false);
+        patrick.setVisible(false);
+        prince.setVisible(false);
+        rihanna.setVisible(false);
+        ronSwanson.setVisible(false);
+        tomSelleck.setVisible(false);
+        wario.setVisible(false);
+        
     }
    
     
@@ -473,7 +514,10 @@ public class justaGUIController {
 
         wipeScreen();
         quiz.setBankrollCounter();
-        System.out.println(quiz.getMoodCounter());
+        System.out.println(quiz.getMoodCounter());//just a test line
+        //quiz.setTraitstoPerson;
+        //quiz.searchTraitsArrayforPersonalityType
+        //Display said personality type.
     }
     @FXML
     public void noSwitchToProfilePage(ActionEvent event) throws IOException {

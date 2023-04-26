@@ -51,7 +51,7 @@ public class TestClassforDummies {
 //            personalities.add(new PersonalityType(new Traits(false,false,false,false), "Lima Bean"));
 //            
 //            
-//            
+//          Traits tttt = new Traits(true, true, true, true, new PersonalityType("Beyowolf"));
 //            System.out.println(personalities);
 //            System.out.println(personalities.toString());
 //            System.out.println(personalitiesArray[0].getTraits());
