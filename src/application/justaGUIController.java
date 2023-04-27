@@ -123,9 +123,6 @@ public class justaGUIController {
     private Label question;
     
     @FXML
-    private Label description;
-    
-    @FXML
     private Label youAre;
 
     @FXML
@@ -210,7 +207,7 @@ public class justaGUIController {
         ronSwanson.setVisible(false);
         tomSelleck.setVisible(false);
         wario.setVisible(false);
-        description.setVisible(false);
+
         
         
     }
