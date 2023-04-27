@@ -9,23 +9,7 @@ public class Quiz {
     private int moodCounter, mustacheCounter, bootyCounter, bankrollCounter;
     private String[] questions = new String[12]; 
     private static Random rand = new Random();
-    Traits tttt = new Traits(true, true, true, true, new PersonalityType("Beyowolf","You're a bad mother shut your mouth. You are more moody and have more booty, mustache, and bankroll than anybody."));
-    Traits tttf = new Traits(true, true, true, false, new PersonalityType( "Wario","Look at that wirey lip ferret. I bet it makes you pretty mad.  At least you got some booty, though."));
-    Traits ttft = new Traits(true, true, false, true, new PersonalityType( "Prince","We'll tell you about your personality once you purify yourself in the waters of Lake Minnetonka."));
-    Traits ttff = new Traits(true, true, false, false, new PersonalityType( "Ron Swanson","The way you see it, government is about doing as little as possible.  And letting that mustache grow."));
-    Traits tftt = new Traits(true, false, true, true, new PersonalityType( "Ri Ri","You are the finest kind.  All that booty, moody bankroll... and no mustache."));
-    Traits tftf = new Traits(true, false, true, false, new PersonalityType("Jessica Rabbit","Are you in need of a detective?  You probably won't have anything to pay with."));
-    Traits tfft = new Traits(true, false, false, true, new PersonalityType( "Mister Burns","If you spent a little more time growing your mustache and doing squats, maybe the folks at the power plant wouldn't go on strike so often."));
-    Traits tfff = new Traits(true, false, false, false, new PersonalityType( "Lindsay Lohan","Nothing but moody here.  Can't find a booty, a mustache, or a bankroll anywhere."));
-    Traits fttt = new Traits(false, true, true, true,  new PersonalityType("Tom Selleck","Sure you're kind.  Sure you've got a mustache.  Sure you've got money.  Sure you've got a body.  It's the, uhhh, total package."));
-    Traits fttf = new Traits(false, true, true, false, new PersonalityType("Corgi","Rump Rump Rump Rump"));
-    Traits ftft = new Traits(false, true, false, true, new PersonalityType("George Clooney","Oh look, it's Mr. Alamuddin himself.  Go help your wife."));
-    Traits ftff = new Traits(false, true, false, false, new PersonalityType("Jesus Christ, Lamb of God","Do you find yourself turning the other cheek.  Well, we have news for you."));
-    Traits fftt = new Traits(false, false, true, true, new PersonalityType("Sofia Vergara","An angel, you've got nothing but booty and bankroll.  And a little accent."));
-    Traits fftf = new Traits(false, false, true, false, new PersonalityType("Patrick Star","You've got nothing but rumpus, but it's okay."));
-    Traits ffft = new Traits(false, false, false, true, new PersonalityType( "Forrest Gump","Mama always said life was like a box of chocolates.  You meet a lot of celebrities and get rich accidentally."));
-    Traits ffff = new Traits(false, false, false, false, new PersonalityType("Lima Bean","You are a Lima bean.  You are devoid of personality.  You are missing all aspects of booty, moody, bankroll, and mustache."));
-    Traits[] personalities = {tttt,tttf,ttft,ttff,tftt,tftf,tfft,tfff,fttt,fttf,ftft,ftff,fftt,fftf,ffft,ffff};
+    protected Traits[] personalities; 
 
 
 
@@ -36,6 +20,7 @@ public class Quiz {
         this.bootyCounter = 0;
         this.bankrollCounter = 0;
         this.questions = createQuestions();
+        this.personalities = importPersonalities();
         //this.personalities set from file?  create a method.
        
     }
@@ -96,7 +81,7 @@ public class Quiz {
      * @return createQuestions() returns an array of 12 questions from 4 arrays of 6 questions 
      * by selecting 3 of each smaller array
      */
-    public String[] createQuestions() {
+    private String[] createQuestions() {
         String[] quizCreator = new String[12];
         int moodRand = -1;
         int bootyRand = -1;
@@ -228,7 +213,7 @@ public class Quiz {
         return quizCreator;
     }
     
-    public String moodQuestions(int x) {
+    private String moodQuestions(int x) {
         String[] moodQuestion = new String[6];
         moodQuestion[0] = "Are you salty?";
         moodQuestion[1] = "Do you ever feel like you have to smack a hoe?";
@@ -240,7 +225,7 @@ public class Quiz {
         
     }
     
-    public String mustacheQuestions (int x) {
+    private String mustacheQuestions (int x) {
         
         String[] mustacheQuestion = new String[6];
         mustacheQuestion[0] = "Does anyone ever tell you that you need to shave?";
@@ -253,7 +238,7 @@ public class Quiz {
         
     }
     
-    public String bootyQuestions(int x) {
+    private String bootyQuestions(int x) {
         
         String[] bootyQuestion = new String[6];
         bootyQuestion[0] = "You got junk in your trunk?";
@@ -266,19 +251,24 @@ public class Quiz {
         
     }
     
-    public String bankrollQuestions(int x) {
+    private String bankrollQuestions(int x) {
         
         String[] bankrollQuestion = new String[6];
         bankrollQuestion[0] = "Are you rollin with a fat wallet?";
         bankrollQuestion[1] = "Does your bank account have multiple zeroes?";
         bankrollQuestion[2] = "Do you have mo problems?";
         bankrollQuestion[3] = "Is there any jet fuel on your energy bill?";
-        bankrollQuestion[4] = "Have you ever thought \"I should buy a boat.\"?";
+        bankrollQuestion[4] = "Have you ever thought \"I should buy a boat?\"";
         bankrollQuestion[5] = "Are you making it rain right now?";
         return bankrollQuestion[x];
         
     }
     
+    /**
+     * This method returns one question from the questions[] array, by calling the number.
+     * @param questionNumber
+     * @return
+     */
     public String getQuestion(int questionNumber) {
         return this.questions[questionNumber];
     }
@@ -336,12 +326,44 @@ public class Quiz {
         
     }
 
-    
+    /**
+     * This method returns an array of the counts of each question type.  This array is used to check for and set the parameters.
+     * @return
+     */
     public int[] getAnswers() {
         
         int [] answerCounter = new int[] {moodCounter,mustacheCounter,bootyCounter,bankrollCounter};
         
         return answerCounter;
+        
+    }
+    
+    /**
+     * This method returns an array of type Traits to fill the instance variable array of Traits in class Quiz
+     * If we have/had enough time, this is meant to pull from a file.  
+     * @return
+     */
+    
+    private Traits[] importPersonalities(){
+        
+        Traits tttt = new Traits(true, true, true, true, new PersonalityType("Beyowolf","You're a bad mother shut your mouth. You are more moody and have more booty, mustache, and bankroll than anybody."));
+        Traits tttf = new Traits(true, true, true, false, new PersonalityType( "Wario","Look at that wirey lip ferret. I bet it makes you pretty mad.  At least you got some booty, though."));
+        Traits ttft = new Traits(true, true, false, true, new PersonalityType( "Prince","We'll tell you about your personality once you purify yourself in the waters of Lake Minnetonka."));
+        Traits ttff = new Traits(true, true, false, false, new PersonalityType( "Ron Swanson","The way you see it, government is about doing as little as possible.  And letting that mustache grow counts for doing as little as possible."));
+        Traits tftt = new Traits(true, false, true, true, new PersonalityType( "Ri Ri","You are the finest kind.  All that booty, moody bankroll... and no mustache."));
+        Traits tftf = new Traits(true, false, true, false, new PersonalityType("Jessica Rabbit","Are you in need of a detective?  You probably won't have anything to pay with."));
+        Traits tfft = new Traits(true, false, false, true, new PersonalityType( "Mister Burns","If you spent a little more time growing your mustache and doing squats, maybe the folks at the power plant wouldn't go on strike so often."));
+        Traits tfff = new Traits(true, false, false, false, new PersonalityType( "Lindsay Lohan","Nothing but moody here.  Can't find a booty, a mustache, or a bankroll anywhere."));
+        Traits fttt = new Traits(false, true, true, true,  new PersonalityType("Tom Selleck","Sure you're kind.  Sure you've got a mustache.  Sure you've got money.  Sure you've got a body.  It's the, uhhh, total package."));
+        Traits fttf = new Traits(false, true, true, false, new PersonalityType("Corgi","Rump Rump Rump Rump"));
+        Traits ftft = new Traits(false, true, false, true, new PersonalityType("George Clooney","Oh look, it's Mr. Alamuddin himself.  Go help your wife."));
+        Traits ftff = new Traits(false, true, false, false, new PersonalityType("Jesus Christ, Lamb of God","Do you find yourself turning the other cheek.  Well, we have news for you."));
+        Traits fftt = new Traits(false, false, true, true, new PersonalityType("Sofia Vergara","An angel, you've got nothing but booty and bankroll.  And a little accent."));
+        Traits fftf = new Traits(false, false, true, false, new PersonalityType("Patrick Star","You've got nothing but rumpus, and it's okay."));
+        Traits ffft = new Traits(false, false, false, true, new PersonalityType( "Forrest Gump","Mama always said life was like a box of chocolates.  You meet a lot of celebrities and get rich accidentally."));
+        Traits ffff = new Traits(false, false, false, false, new PersonalityType("Lima Bean","You are a Lima bean.  You are devoid of personality.  You are missing all aspects of booty, moody, bankroll, and mustache."));
+        Traits[] traitsAndPersonalitiesArray = {tttt,tttf,ttft,ttff,tftt,tftf,tfft,tfff,fttt,fttf,ftft,ftff,fftt,fftf,ffft,ffff};
+        return traitsAndPersonalitiesArray;
         
     }
     

@@ -60,7 +60,7 @@
                   <Font size="18.0" />
                </font>
             </Label>
-            <Label layoutX="234.0" layoutY="57.0" prefHeight="30.0" prefWidth="183.0" text="You are Beyowolf!">
+            <Label layoutX="234.0" layoutY="57.0" prefHeight="30.0" prefWidth="183.0" text="You are Beyowolf!" textAlignment="CENTER">
                <font>
                   <Font size="20.0" />
                </font></Label>
@@ -69,6 +69,11 @@
                   <Image url="@../Beyowolf.jpg" />
                </image>
             </ImageView>
+            <Label fx:id="description" alignment="CENTER" layoutX="19.0" layoutY="265.0" prefHeight="99.0" prefWidth="612.0" style="&#10;" textAlignment="CENTER" textFill="#9f9f9f" wrapText="false">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
       </children>
     </AnchorPane>
   </children>

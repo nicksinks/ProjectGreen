@@ -34,212 +34,122 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox prefHeight="400.0" prefWidth="640.0"
-	xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1"
-	fx:controller="application.justaGUIController">
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.justaGUIController">
 	<children>
 		<MenuBar VBox.vgrow="NEVER">
 			<menus>
 				<Menu mnemonicParsing="false" text="File">
 					<items>
-						<MenuItem mnemonicParsing="false" onAction="#exit"
-							text="Quit" />
+						<MenuItem mnemonicParsing="false" onAction="#exit" text="Quit" />
 					</items>
 				</Menu>
 			</menus>
 		</MenuBar>
-		<AnchorPane maxHeight="-1.0" maxWidth="-1.0"
-			prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
+		<AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
 			<children>
-				<Label fx:id="emailLbl" alignment="CENTER" layoutX="87.0"
-					layoutY="178.0" prefHeight="27.0" prefWidth="68.0" style="&#10;"
-					text="E-mail:" textAlignment="CENTER" textFill="#9f9f9f"
-					wrapText="false">
-					<font>
-						<Font size="18.0" />
-					</font>
-				</Label>
-				<Button fx:id="newQuizButton" layoutX="294.0" layoutY="280.0"
-					mnemonicParsing="false" onAction="#newQuiz" text="New Quiz" />
-				<Button fx:id="mustacheYes1" layoutX="179.0" layoutY="238.0"
-					mnemonicParsing="false" onAction="#yesSwitchToQuestion2" text="Yes"
-					visible="false" />
-				<Button fx:id="mustacheNo1" layoutX="419.0" layoutY="238.0"
-					mnemonicParsing="false" onAction="#noSwitchToQuestion2" text="No"
-					visible="false" />
-				<Button fx:id="mustacheYes2" layoutX="179.0" layoutY="238.0"
-					mnemonicParsing="false" onAction="#yesSwitchToQuestion3" text="Yes"
-					visible="false" />
-				<Button fx:id="mustacheNo2" layoutX="419.0" layoutY="238.0"
-					mnemonicParsing="false" onAction="#noSwitchToQuestion3" text="No"
-					visible="false" />
-				<Button fx:id="mustacheYes3" layoutX="179.0" layoutY="238.0"
-					mnemonicParsing="false" onAction="#yesSwitchToQuestion4" text="Yes"
-					visible="false" />
-				<Button fx:id="mustacheNo3" layoutX="419.0" layoutY="238.0"
-					mnemonicParsing="false" onAction="#noSwitchToQuestion4" text="No"
-					visible="false" />
-				<Button fx:id="moodYes4" layoutX="179.0" layoutY="238.0"
-					mnemonicParsing="false" onAction="#yesSwitchToQuestion5" text="Yes"
-					visible="false" />
-				<Button fx:id="moodNo4" layoutX="419.0" layoutY="238.0"
-					mnemonicParsing="false" onAction="#noSwitchToQuestion5" text="No"
-					visible="false" />
-				<Button fx:id="moodYes5" layoutX="179.0" layoutY="238.0"
-					mnemonicParsing="false" onAction="#yesSwitchToQuestion6" text="Yes"
-					visible="false" />
-				<Button fx:id="moodNo5" layoutX="419.0" layoutY="238.0"
-					mnemonicParsing="false" onAction="#noSwitchToQuestion6" text="No"
-					visible="false" />
-				<Button fx:id="moodYes6" layoutX="179.0" layoutY="238.0"
-					mnemonicParsing="false" onAction="#yesSwitchToQuestion7" text="Yes"
-					visible="false" />
-				<Button fx:id="moodNo6" layoutX="419.0" layoutY="238.0"
-					mnemonicParsing="false" onAction="#noSwitchToQuestion7" text="No"
-					visible="false" />
-				<Button fx:id="bootyYes7" layoutX="179.0" layoutY="238.0"
-					mnemonicParsing="false" onAction="#yesSwitchToQuestion8" text="Yes"
-					visible="false" />
-				<Button fx:id="bootyNo7" layoutX="419.0" layoutY="238.0"
-					mnemonicParsing="false" onAction="#noSwitchToQuestion8" text="No"
-					visible="false" />
-				<Button fx:id="bootyYes8" layoutX="179.0" layoutY="238.0"
-					mnemonicParsing="false" onAction="#yesSwitchToQuestion9" text="Yes"
-					visible="false" />
-				<Button fx:id="bootyNo8" layoutX="419.0" layoutY="238.0"
-					mnemonicParsing="false" onAction="#noSwitchToQuestion9" text="No"
-					visible="false" />
-				<Button fx:id="bootyYes9" layoutX="179.0" layoutY="238.0"
-					mnemonicParsing="false" onAction="#yesSwitchToQuestion10"
-					text="Yes" visible="false" />
-				<Button fx:id="bootyNo9" layoutX="419.0" layoutY="238.0"
-					mnemonicParsing="false" onAction="#noSwitchToQuestion10" text="No"
-					visible="false" />
-				<Button fx:id="bankrollYes10" layoutX="179.0" layoutY="238.0"
-					mnemonicParsing="false" onAction="#yesSwitchToQuestion11"
-					text="Yes" visible="false" />
-				<Button fx:id="bankrollNo10" layoutX="419.0" layoutY="238.0"
-					mnemonicParsing="false" onAction="#noSwitchToQuestion11" text="No"
-					visible="false" />
-				<Button fx:id="bankrollYes11" layoutX="179.0" layoutY="238.0"
-					mnemonicParsing="false" onAction="#yesSwitchToQuestion12"
-					text="Yes" visible="false" />
-				<Button fx:id="bankrollNo11" layoutX="419.0" layoutY="238.0"
-					mnemonicParsing="false" onAction="#noSwitchToQuestion12" text="No"
-					visible="false" />
-				<Button fx:id="bankrollYes12" layoutX="179.0" layoutY="238.0"
-					mnemonicParsing="false" onAction="#yesSwitchToProfilePage"
-					text="Yes" visible="false" />
-				<Button fx:id="bankrollNo12" layoutX="419.0" layoutY="238.0"
-					mnemonicParsing="false" onAction="#noSwitchToProfilePage" text="No"
-					visible="false" />
-				<Label fx:id="nameLabel" alignment="CENTER" layoutX="87.0"
-					layoutY="111.0" prefHeight="27.0" prefWidth="68.0" style="&#10;"
-					text="Name:" textAlignment="CENTER" textFill="#9f9f9f"
-					wrapText="false">
-					<font>
-						<Font size="18.0" />
-					</font>
-				</Label>
-				<TextField fx:id="personName" layoutX="166.0"
-					layoutY="87.0" prefHeight="62.0" prefWidth="386.0" />
-				<TextField fx:id="personEmail" layoutX="166.0"
-					layoutY="164.0" prefHeight="62.0" prefWidth="386.0" />
-				<Label fx:id="questionLabel" alignment="CENTER"
-					layoutX="260.0" layoutY="14.0" prefHeight="27.0" prefWidth="120.0"
-					style="&#10;" text="" textAlignment="CENTER" textFill="#9f9f9f"
-					wrapText="true">
-					<font>
-						<Font size="18.0" />
-					</font>
-				</Label>
-				<Label fx:id="question" alignment="CENTER" layoutX="91.0"
-					layoutY="119.0" prefHeight="27.0" text="" textAlignment="CENTER"
-					textFill="#9f9f9f" wrapText="true">
+				<Label fx:id="question" alignment="CENTER" layoutX="75.0" layoutY="86.0" prefHeight="140.0" prefWidth="510.0" text="" textAlignment="CENTER" textFill="#9f9f9f" wrapText="true">
 					<font>
 						<Font size="24.0" />
 					</font>
 				</Label>
-				<Label fx:id="youAre" layoutX="289.0" layoutY="51.0"
-					prefHeight="35.0" prefWidth="77.0" text="" textAlignment="CENTER"
-					wrapText="true">
+				<Label fx:id="emailLbl" alignment="CENTER" layoutX="87.0" layoutY="178.0" prefHeight="27.0" prefWidth="68.0" style="&#10;" text="E-mail:" textAlignment="CENTER" textFill="#9f9f9f" wrapText="false">
+					<font>
+						<Font size="18.0" />
+					</font>
+				</Label>
+				<Button fx:id="newQuizButton" layoutX="294.0" layoutY="280.0" mnemonicParsing="false" onAction="#newQuiz" text="New Quiz" />
+				<Button fx:id="mustacheYes1" layoutX="179.0" layoutY="238.0" mnemonicParsing="false" onAction="#yesSwitchToQuestion2" text="Yes" visible="false" />
+				<Button fx:id="mustacheNo1" layoutX="419.0" layoutY="238.0" mnemonicParsing="false" onAction="#noSwitchToQuestion2" text="No" visible="false" />
+				<Button fx:id="mustacheYes2" layoutX="179.0" layoutY="238.0" mnemonicParsing="false" onAction="#yesSwitchToQuestion3" text="Yes" visible="false" />
+				<Button fx:id="mustacheNo2" layoutX="419.0" layoutY="238.0" mnemonicParsing="false" onAction="#noSwitchToQuestion3" text="No" visible="false" />
+				<Button fx:id="mustacheYes3" layoutX="179.0" layoutY="238.0" mnemonicParsing="false" onAction="#yesSwitchToQuestion4" text="Yes" visible="false" />
+				<Button fx:id="mustacheNo3" layoutX="419.0" layoutY="238.0" mnemonicParsing="false" onAction="#noSwitchToQuestion4" text="No" visible="false" />
+				<Button fx:id="moodYes4" layoutX="179.0" layoutY="238.0" mnemonicParsing="false" onAction="#yesSwitchToQuestion5" text="Yes" visible="false" />
+				<Button fx:id="moodNo4" layoutX="419.0" layoutY="238.0" mnemonicParsing="false" onAction="#noSwitchToQuestion5" text="No" visible="false" />
+				<Button fx:id="moodYes5" layoutX="179.0" layoutY="238.0" mnemonicParsing="false" onAction="#yesSwitchToQuestion6" text="Yes" visible="false" />
+				<Button fx:id="moodNo5" layoutX="419.0" layoutY="238.0" mnemonicParsing="false" onAction="#noSwitchToQuestion6" text="No" visible="false" />
+				<Button fx:id="moodYes6" layoutX="179.0" layoutY="238.0" mnemonicParsing="false" onAction="#yesSwitchToQuestion7" text="Yes" visible="false" />
+				<Button fx:id="moodNo6" layoutX="419.0" layoutY="238.0" mnemonicParsing="false" onAction="#noSwitchToQuestion7" text="No" visible="false" />
+				<Button fx:id="bootyYes7" layoutX="179.0" layoutY="238.0" mnemonicParsing="false" onAction="#yesSwitchToQuestion8" text="Yes" visible="false" />
+				<Button fx:id="bootyNo7" layoutX="419.0" layoutY="238.0" mnemonicParsing="false" onAction="#noSwitchToQuestion8" text="No" visible="false" />
+				<Button fx:id="bootyYes8" layoutX="179.0" layoutY="238.0" mnemonicParsing="false" onAction="#yesSwitchToQuestion9" text="Yes" visible="false" />
+				<Button fx:id="bootyNo8" layoutX="419.0" layoutY="238.0" mnemonicParsing="false" onAction="#noSwitchToQuestion9" text="No" visible="false" />
+				<Button fx:id="bootyYes9" layoutX="179.0" layoutY="238.0" mnemonicParsing="false" onAction="#yesSwitchToQuestion10" text="Yes" visible="false" />
+				<Button fx:id="bootyNo9" layoutX="419.0" layoutY="238.0" mnemonicParsing="false" onAction="#noSwitchToQuestion10" text="No" visible="false" />
+				<Button fx:id="bankrollYes10" layoutX="179.0" layoutY="238.0" mnemonicParsing="false" onAction="#yesSwitchToQuestion11" text="Yes" visible="false" />
+				<Button fx:id="bankrollNo10" layoutX="419.0" layoutY="238.0" mnemonicParsing="false" onAction="#noSwitchToQuestion11" text="No" visible="false" />
+				<Button fx:id="bankrollYes11" layoutX="179.0" layoutY="238.0" mnemonicParsing="false" onAction="#yesSwitchToQuestion12" text="Yes" visible="false" />
+				<Button fx:id="bankrollNo11" layoutX="419.0" layoutY="238.0" mnemonicParsing="false" onAction="#noSwitchToQuestion12" text="No" visible="false" />
+				<Button fx:id="bankrollYes12" layoutX="179.0" layoutY="238.0" mnemonicParsing="false" onAction="#yesSwitchToProfilePage" text="Yes" visible="false" />
+				<Button fx:id="bankrollNo12" layoutX="419.0" layoutY="238.0" mnemonicParsing="false" onAction="#noSwitchToProfilePage" text="No" visible="false" />
+				<Label fx:id="nameLabel" alignment="CENTER" layoutX="87.0" layoutY="111.0" prefHeight="27.0" prefWidth="68.0" style="&#10;" text="Name:" textAlignment="CENTER" textFill="#9f9f9f" wrapText="false">
+					<font>
+						<Font size="18.0" />
+					</font>
+				</Label>
+				<TextField fx:id="personName" layoutX="166.0" layoutY="87.0" prefHeight="62.0" prefWidth="386.0" />
+				<TextField fx:id="personEmail" layoutX="166.0" layoutY="164.0" prefHeight="62.0" prefWidth="386.0" />
+				<Label fx:id="questionLabel" alignment="CENTER" layoutX="260.0" layoutY="14.0" prefHeight="27.0" prefWidth="120.0" style="&#10;" text="" textAlignment="CENTER" textFill="#9f9f9f" wrapText="true">
+					<font>
+						<Font size="18.0" />
+					</font>
+				</Label>
+				<Label fx:id="youAre" layoutX="289.0" layoutY="51.0" prefHeight="35.0" prefWidth="77.0" text="" textAlignment="CENTER" wrapText="true">
 					<font>
 						<Font size="24.0" />
 					</font>
 				</Label>
-				<ImageView fx:id="beyowolf" fitHeight="150.0"
-					fitWidth="200.0" layoutX="270.0" layoutY="112.0"
-					pickOnBounds="true" preserveRatio="true" visible="false">
+				<ImageView fx:id="beyowolf" fitHeight="150.0" fitWidth="200.0" layoutX="270.0" layoutY="112.0" pickOnBounds="true" preserveRatio="true" visible="false">
 					<image>
 						<Image url="@../Beyowolf.jpg" />
 					</image>
 				</ImageView>
-				                <ImageView fx:id="wario" fitHeight="150.0"
-                    fitWidth="200.0" layoutX="270.0" layoutY="112.0"
-                    pickOnBounds="true" preserveRatio="true" visible="false">
+				                <ImageView fx:id="wario" fitHeight="150.0" fitWidth="200.0" layoutX="270.0" layoutY="112.0" pickOnBounds="true" preserveRatio="true" visible="false">
                     <image>
                         <Image url="@../wario.jpg" />
                     </image>
                 </ImageView>
-                                <ImageView fx:id="prince" fitHeight="150.0"
-                    fitWidth="200.0" layoutX="270.0" layoutY="112.0"
-                    pickOnBounds="true" preserveRatio="true" visible="false">
+                                <ImageView fx:id="prince" fitHeight="150.0" fitWidth="200.0" layoutX="270.0" layoutY="112.0" pickOnBounds="true" preserveRatio="true" visible="false">
                     <image>
                         <Image url="@../Prince.jpg" />
                     </image>
                 </ImageView>
-                                <ImageView fx:id="ronSwanson" fitHeight="150.0"
-                    fitWidth="200.0" layoutX="270.0" layoutY="112.0"
-                    pickOnBounds="true" preserveRatio="true" visible="false">
+                                <ImageView fx:id="ronSwanson" fitHeight="150.0" fitWidth="200.0" layoutX="270.0" layoutY="112.0" pickOnBounds="true" preserveRatio="true" visible="false">
                     <image>
                         <Image url="@../RonSwanson.jpg" />
                     </image>
                 </ImageView>
-                                <ImageView fx:id="rihanna" fitHeight="150.0"
-                    fitWidth="200.0" layoutX="270.0" layoutY="112.0"
-                    pickOnBounds="true" preserveRatio="true" visible="false">
+                                <ImageView fx:id="rihanna" fitHeight="150.0" fitWidth="200.0" layoutX="270.0" layoutY="112.0" pickOnBounds="true" preserveRatio="true" visible="false">
                     <image>
                         <Image url="@../Rihanna.jpg" />
                     </image>
                 </ImageView>
-                                <ImageView fx:id="burns" fitHeight="150.0"
-                    fitWidth="200.0" layoutX="270.0" layoutY="112.0"
-                    pickOnBounds="true" preserveRatio="true" visible="false">
+                                <ImageView fx:id="burns" fitHeight="150.0" fitWidth="200.0" layoutX="270.0" layoutY="112.0" pickOnBounds="true" preserveRatio="true" visible="false">
                     <image>
                         <Image url="@../Burns.jpg" />
                     </image>
                 </ImageView>
-                                <ImageView fx:id="corgi" fitHeight="150.0"
-                    fitWidth="200.0" layoutX="270.0" layoutY="112.0"
-                    pickOnBounds="true" preserveRatio="true" visible="false">
+                                <ImageView fx:id="corgi" fitHeight="150.0" fitWidth="200.0" layoutX="270.0" layoutY="112.0" pickOnBounds="true" preserveRatio="true" visible="false">
                     <image>
                         <Image url="@../Corgi.jpg" />
                     </image>
                 </ImageView>
-                                <ImageView fx:id="georgeClooney" fitHeight="150.0"
-                    fitWidth="200.0" layoutX="270.0" layoutY="112.0"
-                    pickOnBounds="true" preserveRatio="true" visible="false">
+                                <ImageView fx:id="georgeClooney" fitHeight="150.0" fitWidth="200.0" layoutX="270.0" layoutY="112.0" pickOnBounds="true" preserveRatio="true" visible="false">
                     <image>
                         <Image url="@../GeorgeClooney.jpg" />
                     </image>
                 </ImageView>
-                                <ImageView fx:id="lindsayLohan" fitHeight="150.0"
-                    fitWidth="200.0" layoutX="270.0" layoutY="112.0"
-                    pickOnBounds="true" preserveRatio="true" visible="false">
+                                <ImageView fx:id="lindsayLohan" fitHeight="150.0" fitWidth="200.0" layoutX="270.0" layoutY="112.0" pickOnBounds="true" preserveRatio="true" visible="false">
                     <image>
                         <Image url="@../LindsayLohan.jpg" />
                     </image>
                 </ImageView>
-                                <ImageView fx:id="patrick" fitHeight="150.0"
-                    fitWidth="200.0" layoutX="270.0" layoutY="112.0"
-                    pickOnBounds="true" preserveRatio="true" visible="false">
+                                <ImageView fx:id="patrick" fitHeight="150.0" fitWidth="200.0" layoutX="270.0" layoutY="112.0" pickOnBounds="true" preserveRatio="true" visible="false">
                     <image>
                         <Image url="@../patrick.jpg" />
                     </image>
                 </ImageView>
-                                <ImageView fx:id="tomSelleck" fitHeight="150.0"
-                    fitWidth="200.0" layoutX="270.0" layoutY="112.0"
-                    pickOnBounds="true" preserveRatio="true" visible="false">
+                                <ImageView fx:id="tomSelleck" fitHeight="150.0" fitWidth="200.0" layoutX="270.0" layoutY="112.0" pickOnBounds="true" preserveRatio="true" visible="false">
                     <image>
                         <Image url="@../TomSelleck.jpg" />
                     </image>

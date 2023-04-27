@@ -123,6 +123,9 @@ public class justaGUIController {
     private Label question;
     
     @FXML
+    private Label description;
+    
+    @FXML
     private Label youAre;
 
     @FXML
@@ -207,6 +210,8 @@ public class justaGUIController {
         ronSwanson.setVisible(false);
         tomSelleck.setVisible(false);
         wario.setVisible(false);
+        description.setVisible(false);
+        
         
     }
    
@@ -236,12 +241,8 @@ public class justaGUIController {
     public void switchToQuestion1(ActionEvent event) throws IOException {    
 
         wipeScreen();
-        questionLabel.setText("Question 1");
-        questionLabel.setVisible(true);
-        question.setText(quiz.getQuestion(0));
-        question.setVisible(true);
-        mustacheYes1.setVisible(true);
-        mustacheNo1.setVisible(true);
+        displayQuestion1();
+
         
         
     }
@@ -253,12 +254,7 @@ public class justaGUIController {
     public void yesSwitchToQuestion2(ActionEvent event) throws IOException {
 
         wipeScreen();
-        questionLabel.setText("Question 2");
-        questionLabel.setVisible(true);
-        question.setText(quiz.getQuestion(1));
-        question.setVisible(true);
-        mustacheYes2.setVisible(true);
-        mustacheNo2.setVisible(true);
+        displayQuestion2();
         quiz.setMustacheCounter();
         
 
@@ -267,12 +263,7 @@ public class justaGUIController {
     @FXML
     public void noSwitchToQuestion2(ActionEvent event) throws IOException {
         wipeScreen();
-        questionLabel.setText("Question 2");
-        questionLabel.setVisible(true);
-        question.setText(quiz.getQuestion(1));
-        question.setVisible(true);
-        mustacheYes2.setVisible(true);
-        mustacheNo2.setVisible(true);
+        displayQuestion2();
         
 
     }
@@ -281,238 +272,137 @@ public class justaGUIController {
     public void yesSwitchToQuestion3(ActionEvent event) throws IOException {
 
         wipeScreen();
-        questionLabel.setText("Question 3");
-        questionLabel.setVisible(true);
-        question.setText(quiz.getQuestion(2));
-        question.setVisible(true);
-        mustacheYes3.setVisible(true);
-        mustacheNo3.setVisible(true);
+        displayQuestion3();
         quiz.setMustacheCounter();
     }
     @FXML
     public void noSwitchToQuestion3(ActionEvent event) throws IOException {
 
         wipeScreen();
-        questionLabel.setText("Question 3");
-        questionLabel.setVisible(true);
-        question.setText(quiz.getQuestion(2));
-        question.setVisible(true);
-        mustacheYes3.setVisible(true);
-        mustacheNo3.setVisible(true);
+        displayQuestion3();
 
     }
     @FXML
     public void yesSwitchToQuestion4(ActionEvent event) throws IOException {
 
         wipeScreen();
-        questionLabel.setText("Question 4");
-        questionLabel.setVisible(true);
-        question.setText(quiz.getQuestion(3));
-        question.setVisible(true);
-        moodYes4.setVisible(true);
-        moodNo4.setVisible(true);
+        displayQuestion4();
         quiz.setMustacheCounter();
     }
     @FXML
     public void noSwitchToQuestion4(ActionEvent event) throws IOException {
 
         wipeScreen();
-        questionLabel.setText("Question 4");
-        questionLabel.setVisible(true);
-        question.setText(quiz.getQuestion(3));
-        question.setVisible(true);
-        moodYes4.setVisible(true);
-        moodNo4.setVisible(true);
+        displayQuestion4();
 
     }
     @FXML
     public void yesSwitchToQuestion5(ActionEvent event) throws IOException {
 
         wipeScreen();
-        questionLabel.setText("Question 5");
-        questionLabel.setVisible(true);
-        question.setText(quiz.getQuestion(4));
-        question.setVisible(true);
-        moodYes5.setVisible(true);
-        moodNo5.setVisible(true);
+        displayQuestion5();
         quiz.setMoodCounter();
     }
     @FXML
     public void noSwitchToQuestion5(ActionEvent event) throws IOException {
 
         wipeScreen();
-        questionLabel.setText("Question 5");
-        questionLabel.setVisible(true);
-        question.setText(quiz.getQuestion(4));
-        question.setVisible(true);
-        moodYes5.setVisible(true);
-        moodNo5.setVisible(true);
+        displayQuestion5();
 
     }
     @FXML
     public void yesSwitchToQuestion6(ActionEvent event) throws IOException {
 
         wipeScreen();
-        questionLabel.setText("Question 6");
-        questionLabel.setVisible(true);
-        question.setText(quiz.getQuestion(5));
-        question.setVisible(true);
-        moodYes6.setVisible(true);
-        moodNo6.setVisible(true);
+        displayQuestion6();
         quiz.setMoodCounter();
     }
     @FXML
     public void noSwitchToQuestion6(ActionEvent event) throws IOException {
 
         wipeScreen();
-        questionLabel.setText("Question 6");
-        questionLabel.setVisible(true);
-        question.setText(quiz.getQuestion(5));
-        question.setVisible(true);
-        moodYes6.setVisible(true);
-        moodNo6.setVisible(true);
+        displayQuestion6();
 
     }
     @FXML
     public void yesSwitchToQuestion7(ActionEvent event) throws IOException {
 
         wipeScreen();
-        questionLabel.setText("Question 7");
-        questionLabel.setVisible(true);
-        question.setText(quiz.getQuestion(6));
-        question.setVisible(true);
-        bootyYes7.setVisible(true);
-        bootyNo7.setVisible(true);
+        displayQuestion7();
         quiz.setMoodCounter();
     }
     @FXML
     public void noSwitchToQuestion7(ActionEvent event) throws IOException {
 
         wipeScreen();
-        questionLabel.setText("Question 7");
-        questionLabel.setVisible(true);
-        question.setText(quiz.getQuestion(6));
-        question.setVisible(true);
-        bootyYes7.setVisible(true);
-        bootyNo7.setVisible(true);
+        displayQuestion7();
         
     }
     @FXML
     public void yesSwitchToQuestion8(ActionEvent event) throws IOException {
 
         wipeScreen();
-        questionLabel.setText("Question 8");
-        questionLabel.setVisible(true);
-        question.setText(quiz.getQuestion(7));
-        question.setVisible(true);
-        bootyYes8.setVisible(true);
-        bootyNo8.setVisible(true);
+        displayQuestion8();
         quiz.setBootyCounter();
     }
     @FXML
     public void noSwitchToQuestion8(ActionEvent event) throws IOException {
 
         wipeScreen();
-        questionLabel.setText("Question 8");
-        questionLabel.setVisible(true);
-        question.setText(quiz.getQuestion(7));
-        question.setVisible(true);
-        bootyYes8.setVisible(true);
-        bootyNo8.setVisible(true);
+        displayQuestion8();
         
     }    
     @FXML
     public void yesSwitchToQuestion9(ActionEvent event) throws IOException {
 
         wipeScreen();
-        questionLabel.setText("Question 9");
-        questionLabel.setVisible(true);
-        question.setText(quiz.getQuestion(8));
-        question.setVisible(true);
-        bootyYes9.setVisible(true);
-        bootyNo9.setVisible(true);
+        displayQuestion9();
         quiz.setBootyCounter();
     }
     @FXML
     public void noSwitchToQuestion9(ActionEvent event) throws IOException {
 
         wipeScreen();
-        questionLabel.setText("Question 9");
-        questionLabel.setVisible(true);
-        question.setText(quiz.getQuestion(8));
-        question.setVisible(true);
-        bootyYes9.setVisible(true);
-        bootyNo9.setVisible(true);
-
+        displayQuestion9();
     }
     public void yesSwitchToQuestion10(ActionEvent event) throws IOException {
 
         wipeScreen();
-        questionLabel.setText("Question 10");
-        questionLabel.setVisible(true);
-        question.setText(quiz.getQuestion(9));
-        question.setVisible(true);
-        bankrollYes10.setVisible(true);
-        bankrollNo10.setVisible(true);
+        displayQuestion10();
         quiz.setBootyCounter();
     }
     @FXML
     public void noSwitchToQuestion10(ActionEvent event) throws IOException {
 
         wipeScreen();
-        questionLabel.setText("Question 10");
-        questionLabel.setVisible(true);
-        question.setText(quiz.getQuestion(9));
-        question.setVisible(true);
-        bankrollYes10.setVisible(true);
-        bankrollNo10.setVisible(true);
+        displayQuestion10();
 
     }
     @FXML
     public void yesSwitchToQuestion11(ActionEvent event) throws IOException {
 
         wipeScreen();
-        questionLabel.setText("Question 11");
-        questionLabel.setVisible(true);
-        question.setText(quiz.getQuestion(10));
-        question.setVisible(true);
-        bankrollYes11.setVisible(true);
-        bankrollNo11.setVisible(true);
+        displayQuestion11();
         quiz.setBankrollCounter();
     }
     @FXML
     public void noSwitchToQuestion11(ActionEvent event) throws IOException {
 
         wipeScreen();
-        questionLabel.setText("Question 11");
-        questionLabel.setVisible(true);
-        question.setText(quiz.getQuestion(10));
-        question.setVisible(true);
-        bankrollYes11.setVisible(true);
-        bankrollNo11.setVisible(true);
+        displayQuestion11();
     }
     @FXML
     public void yesSwitchToQuestion12(ActionEvent event) throws IOException {
 
         wipeScreen();
-        questionLabel.setText("Question 12");
-        questionLabel.setVisible(true);
-        question.setText(quiz.getQuestion(11));
-        question.setVisible(true);
-        bankrollYes12.setVisible(true);
-        bankrollNo12.setVisible(true);
+        displayQuestion12();
         quiz.setBankrollCounter();
     }
     @FXML
     public void noSwitchToQuestion12(ActionEvent event) throws IOException {
 
         wipeScreen();
-        questionLabel.setText("Question 12");
-        questionLabel.setVisible(true);
-        question.setText(quiz.getQuestion(11));
-        question.setVisible(true);
-        bankrollYes12.setVisible(true);
-        bankrollNo12.setVisible(true);
+        displayQuestion12();
    
     }
     @FXML
@@ -521,46 +411,342 @@ public class justaGUIController {
         wipeScreen();
         quiz.setBankrollCounter();
         person.setTraits(quiz.setTraitsFromQuizAnswers(quiz.getAnswers()));
-        //put a switch method here.
-        if (person.getTraits() == quiz.tttt) {
-            root = FXMLLoader.load(getClass().getResource("profilePage0Beyowolf.fxml"));
-            Scene scene = new Scene(root,675,400);
-            scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
-            Stage stage = new Stage();
-            stage.setScene(scene);
-            stage.show();
-            person.setTraits(quiz.setTraitsFromQuizAnswers(quiz.getAnswers()));
+        displayPersonality(person.getTraits());
 
-        } else {
-            System.out.println("eat it.");
-        }
-
-
-        
-        
-        //quiz.setTraitstoPerson;
-        //quiz.searchTraitsArrayforPersonalityType
-        //Display said personality type.
     }
     @FXML
     public void noSwitchToProfilePage(ActionEvent event) throws IOException {
 
         wipeScreen();
         person.setTraits(quiz.setTraitsFromQuizAnswers(quiz.getAnswers()));
-
-        if (person.getTraits() == quiz.tttt) {
-            root = FXMLLoader.load(getClass().getResource("profilePage0Beyowolf.fxml"));
-            Scene scene = new Scene(root,675,400);
-            scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
-            Stage stage = new Stage();
-            stage.setScene(scene);
-            stage.show();
-
-        } else {
-            System.out.println("eat it.");
-        }
+        displayPersonality(person.getTraits());
 
     }
+    
+    public void displayPersonality(Traits traits) throws IOException {
+        int switchNumber = -1;
+        
+        for (int i = 0; i <quiz.personalities.length; i++) {
+            if (person.getTraits() == quiz.personalities[i]) {
+                switchNumber = i;
+            }
+                
+                    
+        }
+        
+        switch (switchNumber) {
+        
+        case 0 : display0();
+            break;
+        
+        case 1 : display1();
+            break;
+        
+        case 2 : display2();
+            break;
+        
+        case 3 : display3();
+            break;
+        
+        case 4 : display4();
+            break;
+        
+        case 5 : display5();
+            break;
+        
+        case 6 : display6();
+            break;
+        
+        case 7 : display7();
+            break;
+        
+        case 8 : display8();
+            break;
+        
+        case 9 : display9();
+            break;
+        
+        case 10 : display10();
+            break;
+        
+        case 11 : display11();
+            break;
+        
+        case 12 : display12();
+            break;
+        
+        case 13 : display13();
+            break;
+        
+        case 14 : display14();
+            break;
+        
+        case 15 : display15();
+            break;
+        
+        default : display15(); 
+            break;
+        
+        }
+        
+    }
+    
+    public void display0() throws IOException {
+        root = FXMLLoader.load(getClass().getResource("profilePage0Beyowolf.fxml"));
+        Scene scene = new Scene(root,675,400);
+        scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
+        Stage stage = new Stage();
+        stage.setScene(scene);
+        stage.show();
+    }
+    
+    public void display1() throws IOException {
+        root = FXMLLoader.load(getClass().getResource("profilePage1Wario.fxml"));
+        Scene scene = new Scene(root,675,400);
+        scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
+        Stage stage = new Stage();
+        stage.setScene(scene);
+        stage.show();
+    }
+    
+    public void display2() throws IOException {
+        root = FXMLLoader.load(getClass().getResource("profilePage2Prince.fxml"));
+        Scene scene = new Scene(root,675,400);
+        scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
+        Stage stage = new Stage();
+        stage.setScene(scene);
+        stage.show();
+    }
+    
+    public void display3() throws IOException {
+        root = FXMLLoader.load(getClass().getResource("profilePage3.fxml"));
+        Scene scene = new Scene(root,675,400);
+        scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
+        Stage stage = new Stage();
+        stage.setScene(scene);
+        stage.show();
+    }
+    
+    public void display4() throws IOException {
+        root = FXMLLoader.load(getClass().getResource("profilePage4.fxml"));
+        Scene scene = new Scene(root,675,400);
+        scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
+        Stage stage = new Stage();
+        stage.setScene(scene);
+        stage.show();
+    }
+    
+    public void display5() throws IOException {
+        root = FXMLLoader.load(getClass().getResource("profilePage5.fxml"));
+        Scene scene = new Scene(root,675,400);
+        scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
+        Stage stage = new Stage();
+        stage.setScene(scene);
+        stage.show();
+    }
+    
+    public void display6() throws IOException {
+        root = FXMLLoader.load(getClass().getResource("profilePage6.fxml"));
+        Scene scene = new Scene(root,675,400);
+        scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
+        Stage stage = new Stage();
+        stage.setScene(scene);
+        stage.show();
+    }
+    
+    public void display7() throws IOException {
+        root = FXMLLoader.load(getClass().getResource("profilePage7.fxml"));
+        Scene scene = new Scene(root,675,400);
+        scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
+        Stage stage = new Stage();
+        stage.setScene(scene);
+        stage.show();
+    }
+    
+    public void display8() throws IOException {
+        root = FXMLLoader.load(getClass().getResource("profilePage8.fxml"));
+        Scene scene = new Scene(root,675,400);
+        scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
+        Stage stage = new Stage();
+        stage.setScene(scene);
+        stage.show();
+    }
+    
+    public void display9() throws IOException {
+        root = FXMLLoader.load(getClass().getResource("profilePage9.fxml"));
+        Scene scene = new Scene(root,675,400);
+        scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
+        Stage stage = new Stage();
+        stage.setScene(scene);
+        stage.show();
+    }
+    
+    public void display10() throws IOException {
+        root = FXMLLoader.load(getClass().getResource("profilePage10.fxml"));
+        Scene scene = new Scene(root,675,400);
+        scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
+        Stage stage = new Stage();
+        stage.setScene(scene);
+        stage.show();
+    }
+    
+    public void display11() throws IOException {
+        root = FXMLLoader.load(getClass().getResource("profilePage11.fxml"));
+        Scene scene = new Scene(root,675,400);
+        scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
+        Stage stage = new Stage();
+        stage.setScene(scene);
+        stage.show();
+    }
+    
+    public void display12() throws IOException {
+        root = FXMLLoader.load(getClass().getResource("profilePage12.fxml"));
+        Scene scene = new Scene(root,675,400);
+        scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
+        Stage stage = new Stage();
+        stage.setScene(scene);
+        stage.show();
+    }
+    
+    public void display13() throws IOException {
+        root = FXMLLoader.load(getClass().getResource("profilePage13.fxml"));
+        Scene scene = new Scene(root,675,400);
+        scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
+        Stage stage = new Stage();
+        stage.setScene(scene);
+        stage.show();
+    }
+    
+    public void display14() throws IOException {
+        root = FXMLLoader.load(getClass().getResource("profilePage14.fxml"));
+        Scene scene = new Scene(root,675,400);
+        scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
+        Stage stage = new Stage();
+        stage.setScene(scene);
+        stage.show();
+    }
+    
+    public void display15() throws IOException {
+        root = FXMLLoader.load(getClass().getResource("profilePage15.fxml"));
+        Scene scene = new Scene(root,675,400);
+        scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
+        Stage stage = new Stage();
+        stage.setScene(scene);
+        stage.show();
+    }
+    
+    
+    
+    public void displayQuestion1() {
+        questionLabel.setText("Question 1");
+        questionLabel.setVisible(true);
+        question.setText(quiz.getQuestion(0));
+        question.setVisible(true);
+        mustacheYes1.setVisible(true);
+        mustacheNo1.setVisible(true);
+    }
+    
+    public void displayQuestion2() {
+        questionLabel.setText("Question 2");
+        questionLabel.setVisible(true);
+        question.setText(quiz.getQuestion(1));
+        question.setVisible(true);
+        mustacheYes2.setVisible(true);
+        mustacheNo2.setVisible(true);
+    }
+    
+    public void displayQuestion3() {
+        questionLabel.setText("Question 3");
+        questionLabel.setVisible(true);
+        question.setText(quiz.getQuestion(2));
+        question.setVisible(true);
+        mustacheYes3.setVisible(true);
+        mustacheNo3.setVisible(true);
+    }
+    
+    public void displayQuestion4() {
+        questionLabel.setText("Question 4");
+        questionLabel.setVisible(true);
+        question.setText(quiz.getQuestion(3));
+        question.setVisible(true);
+        moodYes4.setVisible(true);
+        moodNo4.setVisible(true);
+    }
+    
+    public void displayQuestion5() {
+        questionLabel.setText("Question 5");
+        questionLabel.setVisible(true);
+        question.setText(quiz.getQuestion(4));
+        question.setVisible(true);
+        moodYes5.setVisible(true);
+        moodNo5.setVisible(true);
+    }
+    
+    public void displayQuestion6() {
+        questionLabel.setText("Question 6");
+        questionLabel.setVisible(true);
+        question.setText(quiz.getQuestion(5));
+        question.setVisible(true);
+        moodYes6.setVisible(true);
+        moodNo6.setVisible(true);
+    }
+    
+    public void displayQuestion7() {
+        questionLabel.setText("Question 7");
+        questionLabel.setVisible(true);
+        question.setText(quiz.getQuestion(6));
+        question.setVisible(true);
+        bootyYes7.setVisible(true);
+        bootyNo7.setVisible(true);
+    }
+    
+    public void displayQuestion8() {
+        questionLabel.setText("Question 8");
+        questionLabel.setVisible(true);
+        question.setText(quiz.getQuestion(7));
+        question.setVisible(true);
+        bootyYes8.setVisible(true);
+        bootyNo8.setVisible(true);
+    }
+    
+    public void displayQuestion9() {
+        questionLabel.setText("Question 9");
+        questionLabel.setVisible(true);
+        question.setText(quiz.getQuestion(8));
+        question.setVisible(true);
+        bootyYes9.setVisible(true);
+        bootyNo9.setVisible(true);
+    }
+    
+    public void displayQuestion10() {
+        questionLabel.setText("Question 10");
+        questionLabel.setVisible(true);
+        question.setText(quiz.getQuestion(9));
+        question.setVisible(true);
+        bankrollYes10.setVisible(true);
+        bankrollNo10.setVisible(true);
+    }
+    
+    public void displayQuestion11() {
+        questionLabel.setText("Question 11");
+        questionLabel.setVisible(true);
+        question.setText(quiz.getQuestion(10));
+        question.setVisible(true);
+        bankrollYes11.setVisible(true);
+        bankrollNo11.setVisible(true);
+    }
+    
+    public void displayQuestion12() {
+        questionLabel.setText("Question 12");
+        questionLabel.setVisible(true);
+        question.setText(quiz.getQuestion(11));
+        question.setVisible(true);
+        bankrollYes12.setVisible(true);
+        bankrollNo12.setVisible(true);
+    }
+    
+  
+    
     
     
     
