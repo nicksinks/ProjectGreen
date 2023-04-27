@@ -60,11 +60,11 @@
                   <Font size="18.0" />
                </font>
             </Label>
-            <Label layoutX="234.0" layoutY="57.0" prefHeight="30.0" prefWidth="183.0" text="You are Beyowolf!" textAlignment="CENTER">
+            <Label layoutX="238.0" layoutY="59.0" prefHeight="30.0" prefWidth="162.0" text="You are Beyowolf!" textAlignment="CENTER">
                <font>
                   <Font size="20.0" />
                </font></Label>
-            <ImageView fx:id="beyowolf" fitHeight="150.0" fitWidth="200.0" layoutX="270.0" layoutY="112.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="beyowolf" fitHeight="224.0" fitWidth="241.0" layoutX="245.0" layoutY="104.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../Beyowolf.jpg" />
                </image>

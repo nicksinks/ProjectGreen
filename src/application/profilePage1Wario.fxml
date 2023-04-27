@@ -64,9 +64,9 @@
                <font>
                   <Font size="20.0" />
                </font></Label>
-            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="270.0" layoutY="112.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="207.0" fitWidth="368.0" layoutX="136.0" layoutY="119.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../wario.webp" />
+                  <Image url="@../Wario.jpg" />
                </image>
             </ImageView>
       </children>
