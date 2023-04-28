@@ -1,15 +1,17 @@
-package application;
+// Initial test class before GUI.
+
+// package application;
 //
 //import java.util.ArrayList;
 //
-public class TestClassforDummies {
+// public class TestClassforDummies {
     
     //Traits tttt = new Traits(true,true,true,true);  
     //PersonalityType beyMonster = new PersonalityType(tttt, "Beymonster");
     
     
     //quiz here that sets the traits values
-    Person person = new Person("nick", "email@email.com");//text from gui, text from gui
+    // Person person = new Person("nick", "email@email.com");//text from gui, text from gui
     
     
 //    for (for personality: personalities) {

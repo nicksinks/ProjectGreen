@@ -5,7 +5,8 @@ package application;
 
 /**
  * @author nicholaszeig
- *
+ * collab: Nicholas Zeig, Zachariah Sykes, Kristy Miller, Stephen Torrijas
+ * 
  */
 public class Person {
     
@@ -47,6 +48,8 @@ public class Person {
     public Traits getTraits() {
         return this.yourTraits;
     }
+    
+    // Gets the personality type from PersonsTraits.
     
     public PersonalityType getPersonalityType() {
         return this.yourTraits.getPersonalityType();

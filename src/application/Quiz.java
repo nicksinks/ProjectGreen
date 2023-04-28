@@ -1,12 +1,13 @@
+
 package application;
 
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
+
 import java.util.Random;
 
+/*@author: Stephen Torrijas
+ * collab: Nicholas Zeig, Zachariah Sykes, Kristy Miller
+ * 
+ */
 
 public class Quiz {
     
@@ -17,7 +18,9 @@ public class Quiz {
     protected Traits[] personalities; 
 
 
-
+    /*
+     * Quiz constructor creates 4 integers and two arrays
+     */
     public Quiz() {
         
         this.moodCounter = 0;
@@ -31,14 +34,14 @@ public class Quiz {
     }
     
 
-    
+    // Getter and Setters
     public int getMoodCounter() {
         return moodCounter;
         
     }
 
 
-
+ 
     public void setMoodCounter() {
  
         this.moodCounter++;
@@ -217,6 +220,13 @@ public class Quiz {
         
         return quizCreator;
     }
+ 
+    /*
+     * The following four methods are used by quiz creator 
+     * Quiz creator selects questions from each set
+     * 
+     */
+    
     
     private String moodQuestions(int x) {
         String[] moodQuestion = new String[6];
@@ -349,7 +359,7 @@ public class Quiz {
      * @return
      */
     
-    private Traits[] importPersonalities(){
+   private Traits[] importPersonalities(){
         
         Traits tttt = new Traits(true, true, true, true, new PersonalityType("Beyowolf","You're a bad mother shut your mouth. You are more moody and have more booty, mustache, and bankroll than anybody."));
         Traits tttf = new Traits(true, true, true, false, new PersonalityType( "Wario","Look at that wirey lip ferret. I bet it makes you pretty mad.  At least you got some booty, though."));
@@ -372,11 +382,14 @@ public class Quiz {
       
         
         
-        /* Code commented out for now - Stephen
-         * 
-         *     private Traits[] importPersonalities1() {
+       
+      /* 
+       * Attempted to pull personalities from a file but didn't have time.
+       *   
+       *   private Traits[] importPersonalities() {
         List<Traits> traitsList = new ArrayList<>();
-        try (BufferedReader br = new BufferedReader(new FileReader("personalities.txt"))) {
+        try {
+        	BufferedReader br = new BufferedReader(new FileReader("personalities.txt"));
             String line;
             while ((line = br.readLine()) != null) {
                 String[] parts = line.split(",");
@@ -390,18 +403,23 @@ public class Quiz {
             }
         } catch (IOException e) {
             e.printStackTrace();
-        }
+        } finally [
+        if (br != bull) {
+        try {
+        	br.close();
+        	} catch (IOException e) {
+        	e.prinStackTrace{}
         return traitsList.toArray(new Traits[0]);
     }
-}
-           */
+    */
+   }
+           
      
       
     }
     
-    
-}
-    
+     
+  
     
     
 

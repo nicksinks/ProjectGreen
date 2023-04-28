@@ -163,7 +163,8 @@ public class justaGUIController {
         Platform.exit();
     }
 
-
+    //Sets every item in the .fxml file to not visible while leaving Scene and Stage intact
+    
     void wipeScreen() {
         personEmail.setVisible(false);
         personName.setVisible(false);
@@ -217,6 +218,9 @@ public class justaGUIController {
 
 
     @FXML
+    
+    // Makes a new quiz and makes a new person, then switches to question 1. 
+    
     void newQuiz(ActionEvent event) throws IOException {
 
         root = FXMLLoader.load(getClass().getResource("justaGUI.fxml"));
@@ -245,7 +249,7 @@ public class justaGUIController {
     }
 
     
-    
+    //Next several methods all wipe the screen. Display the next question and either count or do not count.
  
     @FXML
     public void yesSwitchToQuestion2(ActionEvent event) throws IOException {
@@ -402,6 +406,10 @@ public class justaGUIController {
         displayQuestion12();
    
     }
+    
+    // Next two items finish the quiz. 
+    
+    
     @FXML
     public void yesSwitchToProfilePage(ActionEvent event) throws IOException {
 
@@ -419,6 +427,9 @@ public class justaGUIController {
         displayPersonality(person.getTraits());
 
     }
+    
+    // Uses a switch case to determine which personality page to show.
+    
     
     public void displayPersonality(Traits traits) throws IOException {
         int switchNumber = -1;
@@ -487,6 +498,8 @@ public class justaGUIController {
         }
         
     }
+    
+    // Next 16 methods displays profile pages getting called from the previous switch statement. 
     
     public void display0() throws IOException {
         root = FXMLLoader.load(getClass().getResource("profilePage0Beyowolf.fxml"));
@@ -632,6 +645,8 @@ public class justaGUIController {
         stage.show();
     }
     
+    
+    // Next 12 methods display questions after getting called by handlers. Set button visibility.
     
     
     public void displayQuestion1() {

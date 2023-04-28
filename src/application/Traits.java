@@ -1,6 +1,12 @@
 package application;
 
-//@Author Project Green, Kristy Miller, 4/8/23
+/*@Author Project Green, Kristy Miller, 4/8/23
+ * collab: Nicholas Zeig, Zachariah Sykes, Stephen Torrijas
+ * 
+ * 
+*/
+
+// 
 
 public class Traits {
     private boolean mood;
@@ -9,6 +15,9 @@ public class Traits {
     private boolean bankroll;
     private PersonalityType personalityType;
 
+    // Constructor sets boolean for each personality trait and object personality type.
+    
+    
     public  Traits (boolean mood, boolean mustache, boolean booty, boolean bankroll, PersonalityType personalityType){
 
         this.mood = mood;
@@ -18,6 +27,8 @@ public class Traits {
         this.personalityType = personalityType;
     }
 
+    // Getters and Setters
+    
     public boolean isMood() {
         return this.mood;
     }
@@ -43,9 +54,15 @@ public class Traits {
         this.bankroll = bankroll;
     }
 
+    // Returns personality type 
+    
+    
     public PersonalityType getPersonalityType() {
         return this.personalityType;
     }
+   
+    
+    
     @Override
     public String toString() {
         
@@ -70,6 +87,7 @@ public class Traits {
         } else {
             mood = "less moody";
         }
+        
         PersonalityType personalityDescription = getPersonalityType();
         String traitsDescription;
         traitsDescription = "You are " + mood + ", " + mustache + ", " + booty + ", " + bankroll + ".  That makes you a " + personalityDescription;

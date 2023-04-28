@@ -1,5 +1,9 @@
 package application;
-
+/*
+ * author: Zachariah Sykes
+ * collab: Nicholas Zeig, Kristy Miller, Stephen Torrijas
+ * 
+ */
 public class PersonalityType{ //this is BeymonsterType, //WarioType //TomSelleckType //etc. 
     
 

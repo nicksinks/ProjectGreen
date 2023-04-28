@@ -1,4 +1,4 @@
-///**
+///** This architecture wasn't working for our program. Not being used. 
 // * 
 // */
 //package application;
@@ -7,7 +7,7 @@
 //
 ///**
 // * @author nicholas
-// *
+// * collab: Nicholas Zeig, Zachariah Sykes, Kristy Miller, Stephen Torrijas
 // */
 //public abstract class Personality {
 //    
