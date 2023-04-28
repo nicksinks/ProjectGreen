@@ -1,5 +1,10 @@
 package application;
 
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Random;
 
 
@@ -364,7 +369,34 @@ public class Quiz {
         Traits ffff = new Traits(false, false, false, false, new PersonalityType("Lima Bean","You are a Lima bean.  You are devoid of personality.  You are missing all aspects of booty, moody, bankroll, and mustache."));
         Traits[] traitsAndPersonalitiesArray = {tttt,tttf,ttft,ttff,tftt,tftf,tfft,tfff,fttt,fttf,ftft,ftff,fftt,fftf,ffft,ffff};
         return traitsAndPersonalitiesArray;
+      
         
+        
+        /* Code commented out for now - Stephen
+         * 
+         *     private Traits[] importPersonalities1() {
+        List<Traits> traitsList = new ArrayList<>();
+        try (BufferedReader br = new BufferedReader(new FileReader("personalities.txt"))) {
+            String line;
+            while ((line = br.readLine()) != null) {
+                String[] parts = line.split(",");
+                boolean mood = parts[0].charAt(0) == 't';
+                boolean mustache = parts[0].charAt(1) == 't';
+                boolean booty = parts[0].charAt(2) == 't';
+                boolean bankroll = parts[0].charAt(3) == 't';
+                PersonalityType personality = new PersonalityType(parts[1], parts[2]);
+                Traits traits = new Traits(mood, mustache, booty, bankroll, personality);
+                traitsList.add(traits);
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return traitsList.toArray(new Traits[0]);
+    }
+}
+           */
+     
+      
     }
     
     
