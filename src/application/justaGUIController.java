@@ -9,13 +9,8 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.image.ImageView;
-import javafx.scene.layout.VBox;
-import javafx.scene.paint.Color;
-import javafx.scene.text.Font;
-import javafx.scene.text.FontWeight;
 import javafx.stage.Stage;
 import java.io.IOException;
-import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 
@@ -25,8 +20,8 @@ public class justaGUIController {
     Quiz quiz = new Quiz();
     Person person;
     private Parent root;
-    private Stage stage;
-    private Scene scene;
+    
+    
     
 
     @FXML
