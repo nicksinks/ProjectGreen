@@ -119,6 +119,9 @@ public class justaGUIController {
     
     @FXML
     private Label youAre;
+    
+    @FXML
+    private Label description;
 
     @FXML
     private ImageView beyowolf;
@@ -497,6 +500,7 @@ public class justaGUIController {
     // Next 16 methods displays profile pages getting called from the previous switch statement. 
     
     public void display0() throws IOException {
+
         root = FXMLLoader.load(getClass().getResource("profilePage0Beyowolf.fxml"));
         Scene scene = new Scene(root,675,400);
         scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());

@@ -69,7 +69,7 @@
                   <Image url="@../Beyowolf.jpg" />
                </image>
             </ImageView>
-            <Label fx:id="description" alignment="CENTER" layoutX="19.0" layoutY="265.0" prefHeight="99.0" prefWidth="612.0" style="&#10;" textAlignment="CENTER" textFill="#9f9f9f" wrapText="false">
+            <Label fx:id="description" alignment="CENTER" layoutX="19.0" layoutY="265.0" prefHeight="99.0" prefWidth="612.0" style="&#10;" textAlignment="CENTER" textFill="#9f9f9f" wrapText="false" text="">
                <font>
                   <Font size="18.0" />
                </font>
